@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаВидыПродукции" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа виды продукции</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа виды продукции</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаВидыПродукцииРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<Table name="ДоступныеВидыПродукции" id="5">
+					<Representation>List</Representation>
+					<TitleLocation>Top</TitleLocation>
+					<ChangeRowSet>false</ChangeRowSet>
+					<ChangeRowOrder>false</ChangeRowOrder>
+					<Header>false</Header>
+					<HorizontalLines>false</HorizontalLines>
+					<VerticalLines>false</VerticalLines>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<DataPath>ДоступныеВидыПродукции</DataPath>
+					<RowPictureDataPath>ДоступныеВидыПродукции.Picture</RowPictureDataPath>
+					<ContextMenu name="ДоступныеВидыПродукцииКонтекстноеМеню" id="6"/>
+					<AutoCommandBar name="ДоступныеВидыПродукцииКоманднаяПанель" id="7">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ДоступныеВидыПродукцииРасширеннаяПодсказка" id="8"/>
+					<SearchStringAddition name="ДоступныеВидыПродукцииСтрокаПоиска" id="9">
+						<AdditionSource>
+							<Item>ДоступныеВидыПродукции</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ДоступныеВидыПродукцииСтрокаПоискаКонтекстноеМеню" id="10"/>
+						<ExtendedTooltip name="ДоступныеВидыПродукцииСтрокаПоискаРасширеннаяПодсказка" id="11"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ДоступныеВидыПродукцииСостояниеПросмотра" id="12">
+						<AdditionSource>
+							<Item>ДоступныеВидыПродукции</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ДоступныеВидыПродукцииСостояниеПросмотраКонтекстноеМеню" id="13"/>
+						<ExtendedTooltip name="ДоступныеВидыПродукцииСостояниеПросмотраРасширеннаяПодсказка" id="14"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ДоступныеВидыПродукцииУправлениеПоиском" id="15">
+						<AdditionSource>
+							<Item>ДоступныеВидыПродукции</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ДоступныеВидыПродукцииУправлениеПоискомКонтекстноеМеню" id="16"/>
+						<ExtendedTooltip name="ДоступныеВидыПродукцииУправлениеПоискомРасширеннаяПодсказка" id="17"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="Selection">ДоступныеВидыПродукцииВыбор</Event>
+					</Events>
+					<ChildItems>
+						<InputField name="ДоступныеВидыПродукцииЗначение" id="18">
+							<DataPath>ДоступныеВидыПродукции.Value</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ДоступныеВидыПродукцииЗначениеКонтекстноеМеню" id="19"/>
+							<ExtendedTooltip name="ДоступныеВидыПродукцииЗначениеРасширеннаяПодсказка" id="20"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<UsualGroup name="ГруппаКомандыВидыПродукции" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа команды виды продукции</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа команды виды продукции</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаКомандыВидыПродукцииРасширеннаяПодсказка" id="4"/>
+					<ChildItems>
+						<LabelDecoration name="Декорация1" id="45">
+							<ContextMenu name="Декорация1КонтекстноеМеню" id="46"/>
+							<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="47"/>
+						</LabelDecoration>
+						<Button name="ДобавитьЭлемент" id="37">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ДобавитьЭлемент</CommandName>
+							<ExtendedTooltip name="ДобавитьЭлементРасширеннаяПодсказка" id="38"/>
+						</Button>
+						<Button name="ДобавитьВсеЭлементы" id="39">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ДобавитьВсеЭлементы</CommandName>
+							<ExtendedTooltip name="ДобавитьВсеЭлементыРасширеннаяПодсказка" id="40"/>
+						</Button>
+						<Button name="УдалитьЭлемент" id="41">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.УдалитьЭлемент</CommandName>
+							<ExtendedTooltip name="УдалитьЭлементРасширеннаяПодсказка" id="42"/>
+						</Button>
+						<Button name="УдалитьВсеЭлементы" id="43">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.УдалитьВсеЭлементы</CommandName>
+							<ExtendedTooltip name="УдалитьВсеЭлементыРасширеннаяПодсказка" id="44"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<Table name="ВыбранныеВидыПродукции" id="21">
+					<Representation>List</Representation>
+					<TitleLocation>Top</TitleLocation>
+					<ChangeRowSet>false</ChangeRowSet>
+					<ChangeRowOrder>false</ChangeRowOrder>
+					<Header>false</Header>
+					<HorizontalLines>false</HorizontalLines>
+					<VerticalLines>false</VerticalLines>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<DataPath>ВыбранныеВидыПродукции</DataPath>
+					<RowPictureDataPath>ВыбранныеВидыПродукции.Picture</RowPictureDataPath>
+					<ContextMenu name="ВыбранныеВидыПродукцииКонтекстноеМеню" id="22"/>
+					<AutoCommandBar name="ВыбранныеВидыПродукцииКоманднаяПанель" id="23">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ВыбранныеВидыПродукцииРасширеннаяПодсказка" id="24"/>
+					<SearchStringAddition name="ВыбранныеВидыПродукцииСтрокаПоиска" id="25">
+						<AdditionSource>
+							<Item>ВыбранныеВидыПродукции</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ВыбранныеВидыПродукцииСтрокаПоискаКонтекстноеМеню" id="26"/>
+						<ExtendedTooltip name="ВыбранныеВидыПродукцииСтрокаПоискаРасширеннаяПодсказка" id="27"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ВыбранныеВидыПродукцииСостояниеПросмотра" id="28">
+						<AdditionSource>
+							<Item>ВыбранныеВидыПродукции</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ВыбранныеВидыПродукцииСостояниеПросмотраКонтекстноеМеню" id="29"/>
+						<ExtendedTooltip name="ВыбранныеВидыПродукцииСостояниеПросмотраРасширеннаяПодсказка" id="30"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ВыбранныеВидыПродукцииУправлениеПоиском" id="31">
+						<AdditionSource>
+							<Item>ВыбранныеВидыПродукции</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ВыбранныеВидыПродукцииУправлениеПоискомКонтекстноеМеню" id="32"/>
+						<ExtendedTooltip name="ВыбранныеВидыПродукцииУправлениеПоискомРасширеннаяПодсказка" id="33"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="Selection">ВыбранныеВидыПродукцииВыбор</Event>
+					</Events>
+					<ChildItems>
+						<InputField name="ВыбранныеВидыПродукцииЗначение" id="34">
+							<DataPath>ВыбранныеВидыПродукции.Value</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ВыбранныеВидыПродукцииЗначениеКонтекстноеМеню" id="35"/>
+							<ExtendedTooltip name="ВыбранныеВидыПродукцииЗначениеРасширеннаяПодсказка" id="36"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<CommandBar name="ГруппаКомандыФормы" id="48">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа команды формы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа команды формы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalLocation>Right</HorizontalLocation>
+			<ExtendedTooltip name="ГруппаКомандыФормыРасширеннаяПодсказка" id="49"/>
+			<ChildItems>
+				<Button name="Готово" id="50">
+					<Type>CommandBarButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>Form.Command.Готово</CommandName>
+					<ExtendedTooltip name="ГотовоРасширеннаяПодсказка" id="51"/>
+				</Button>
+				<Button name="Отмена" id="52">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.Отмена</CommandName>
+					<ExtendedTooltip name="ОтменаРасширеннаяПодсказка" id="53"/>
+				</Button>
+			</ChildItems>
+		</CommandBar>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ДоступныеВидыПродукции" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доступные виды продукции</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription"/>
+		</Attribute>
+		<Attribute name="ВыбранныеВидыПродукции" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбранные виды продукции</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription"/>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ДобавитьЭлемент" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить &gt;</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить элемент</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьЭлемент</Action>
+		</Command>
+		<Command name="ДобавитьВсеЭлементы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить все &gt;&gt;</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить все элементы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьВсеЭлементы</Action>
+		</Command>
+		<Command name="УдалитьЭлемент" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>&lt; Удалить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить элемент</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьЭлемент</Action>
+		</Command>
+		<Command name="УдалитьВсеЭлементы" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>&lt;&lt; Удалить все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить все элементы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьВсеЭлементы</Action>
+		</Command>
+		<Command name="Готово" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Готово</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Готово</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Готово</Action>
+		</Command>
+		<Command name="Отмена" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмена</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмена</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Отмена</Action>
+		</Command>
+	</Commands>
+</Form>

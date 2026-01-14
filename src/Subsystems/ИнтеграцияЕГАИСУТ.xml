@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Subsystem uuid="ce244a08-c16e-4a60-aca7-beeef8d80f54">
+		<Properties>
+			<Name>ИнтеграцияЕГАИСУТ</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Интеграция ЕГАИСУТ</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИнтеграцияИСУТКлиентСерверГлобальный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИнтеграцияЕГАИСУТВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УправлениеКонтактнойИнформациейЕГАИСУТ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИнтеграцияИСУТГлобальный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ПодключаемыеКоманды</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Interface.УправлениеРозничнойТорговлей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИнтеграцияЕГАИСУТКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ПодключаемыеКомандыКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.НастройкаСинхронизацииСЕГАИС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ПодключаемыеКомандыКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСАдресами</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МенеджерОборудованияКлиентПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИнтеграцияЕГАИСУТКлиентСерверПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбщегоНазначенияВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИнтеграцияЕГАИСУТ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбработкаТабличнойЧастиСерверИСУТ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбработкаТабличнойЧастиКлиентСерверИСУТ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбщегоНазначенияПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УправлениеКонтактнойИнформациейКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РозничныеПродажиКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.КомпонентаПечатиШтрихкодов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ВыборВидаПродукцииИСУТ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВариантыОтправкиЭлектронногоЧекаПокупателю</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РозничныеПродажи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.НоменклатураКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ФормаСканированияАкцизнойМарки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИнтеграцияИСУТ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">151978cf-df97-4a32-88e7-78dc78ed6cd8</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ГрупповоеИзменениеОбъектовКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИнтеграцияИСУТКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИнтеграцияИСВызовСервераУТ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИнтеграцияИСУТКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИнтеграцияИСУТПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УправлениеДоступом</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ФайловаяСистемаКлиент</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

@@ -1,0 +1,807 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Enum uuid="1441036e-50d8-4916-88b4-17585b9027fe">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ШаблоныКодовМаркировкиСУЗ" category="Ref">
+				<xr:TypeId>c6209784-8475-480f-b87f-532c503c372f</xr:TypeId>
+				<xr:ValueId>f12482e7-58eb-4a7d-85e9-06323a9cd2e8</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ШаблоныКодовМаркировкиСУЗ" category="Manager">
+				<xr:TypeId>dc691e7b-663e-4afc-9c47-df003c0b9eae</xr:TypeId>
+				<xr:ValueId>043d37d2-34c2-4eb5-8dc5-2f4b5b4e3d84</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ШаблоныКодовМаркировкиСУЗ" category="List">
+				<xr:TypeId>114980ef-bf6d-4d67-be61-89fe7f3a0a55</xr:TypeId>
+				<xr:ValueId>855c2278-4f8b-4e4d-a4d9-cca69f9c6cfb</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ШаблоныКодовМаркировкиСУЗ</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шаблоны кодов маркировки СУЗ</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<StandardAttributes>
+				<xr:StandardAttribute name="Order">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="Ref">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+			</StandardAttributes>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="a5f05e4a-170c-4c35-9650-6717d13d554b">
+				<Properties>
+					<Name>Обувь</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обувь</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="57990e60-9326-45ef-acb8-36192b019d76">
+				<Properties>
+					<Name>ЛекарственныеСредства</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Лекарственные средства</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="ee304f89-e13f-4376-93ce-d4e9d49bc0a4">
+				<Properties>
+					<Name>БлокТабачныхПачек</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Блок табачных пачек</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="5f361662-790e-49f9-bd2f-1b6d89a94669">
+				<Properties>
+					<Name>ТабачнаяПачка</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Табачная пачка</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="9f9aa2be-d158-4dfa-b74e-b68aede32fb1">
+				<Properties>
+					<Name>ЛегкаяПромышленность</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Единица товара (Товары легкой промышленности и одежда)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="bb6c1aad-01e4-4d92-a7a9-3cfb12b25f6b">
+				<Properties>
+					<Name>МолочнаяПродукцияПодконтрольнаяВЕТИС</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Молоко и молочная продукция</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="392d265e-aa19-4c63-a29f-bdf7d351fced">
+				<Properties>
+					<Name>СкоропортящаясяМолочнаяПродукцияВЕТИС</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Скоропортящаяся молочная продукция ВЕТИС</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="eb952b0e-eee2-4841-98dd-2041070a6af8">
+				<Properties>
+					<Name>МолочнаяПродукцияБезУказанияСроковГодностиВЕТИС</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Молочная продукция без указания сроков годности ВЕТИС</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="ee097164-7713-4eb6-a76d-970d768deed6">
+				<Properties>
+					<Name>Шины</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Шины и автопокрышки</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="dcdf4dee-b34b-4504-89c5-f04b687a1e51">
+				<Properties>
+					<Name>Фотоаппараты</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Единица товара (Фотоаппараты и лампы-вспышки)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="a72df857-a0ea-404d-80a3-43f14e976dc1">
+				<Properties>
+					<Name>Духи</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Единица товара (Духи и туалетная вода)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="dfe3d539-0ee6-48c4-923c-d446df022dc2">
+				<Properties>
+					<Name>Велосипеды</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Велосипеды</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="2c869aac-0fcd-4809-bcfd-bbadbe09dce4">
+				<Properties>
+					<Name>КреслаКоляски</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Медицинские изделия</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="bfea6aca-8c1f-45fd-80e3-bc0ee457d4bb">
+				<Properties>
+					<Name>ДухиКомплект</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комплект (Духи и туалетная вода)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="acdbe8f1-a711-4904-8191-d80d85567b61">
+				<Properties>
+					<Name>ЛегкаяПромышленностьКомплект</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комплект (Товары легкой промышленности и одежда)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="0fa838b1-de9e-4ddb-82a3-767bd324f849">
+				<Properties>
+					<Name>ФотоаппаратыКомплект</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комплект (Фотоаппараты и лампы-вспышки)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="3d0756b5-eddf-4cdb-aa93-7b3d6a81edb2">
+				<Properties>
+					<Name>АльтернативныйТабакБлок</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Альтернативный табак (Блок GS1)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="e3136927-96a2-400b-9949-0aaf4b29ff0f">
+				<Properties>
+					<Name>АльтернативныйТабакПачка</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Альтернативный табак (классический табак)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="32061d87-a300-4312-9bb7-8c04235afbcc">
+				<Properties>
+					<Name>АльтернативныйТабакПачкаGS1</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Альтернативный табак (ПачкаGS1)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="0b46e0f1-c678-4e8d-82bf-930be9714e5f">
+				<Properties>
+					<Name>УпакованнаяВода</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Упакованная вода</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="991f750c-94c9-4078-b122-4f08c7242875">
+				<Properties>
+					<Name>МолочнаяПродукцияБезВЕТИС</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Молочная продукция без ВЕТИС</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="c72ec1db-6504-46bc-9676-109ed27f5002">
+				<Properties>
+					<Name>МолочнаяПродукцияСерия6СимволовВЕТИС</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Молоко и молочная продукция</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="15dfb4b6-18b7-460c-98b1-75c64ff9c601">
+				<Properties>
+					<Name>МолочнаяПродукцияСерия6СимволовБезВЕТИС</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Молоко и молочная продукция (без ВЕТИС)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="75f442a7-bd13-4f69-baaf-6969699f380f">
+				<Properties>
+					<Name>Антисептики</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Антисептики</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="8396e5bf-d25d-415f-9bc2-69cbb87295fd">
+				<Properties>
+					<Name>БАДы</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>БАДы</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="16fdea8b-b5dc-43fa-895b-f501b04c76ff">
+				<Properties>
+					<Name>Пиво</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пиво</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="8dc0a9db-724e-4ed1-865b-af162ea37ca2">
+				<Properties>
+					<Name>НикотиносодержащаяПродукцияПачка</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Никотиносодержащая продукция (пачка)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="ac744908-a92f-4f9c-a722-3235d9cf6bd0">
+				<Properties>
+					<Name>НикотиносодержащаяПродукцияБлок</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Никотиносодержащая продукция (блок)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="ef739633-88cb-4e39-bc00-94b25f1c4d79">
+				<Properties>
+					<Name>ПродукцияИзНатуральногоМеха</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Товары из натурального меха</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="414fbea9-e246-440b-86a9-c3c662130bc9">
+				<Properties>
+					<Name>НикотиносодержащаяПродукцияНабор</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Набор (Никотиносодержащая продукция)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="d2547741-f173-4d54-a359-f78a03aae0d6">
+				<Properties>
+					<Name>ДухиНабор</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Набор (Духи и туалетная вода)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="f9c55c84-ec72-438d-a831-743120195cfa">
+				<Properties>
+					<Name>ЛегкаяПромышленностьНабор</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Набор (Легкая промышленность)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="69ce1226-35bf-4b7c-91be-14158367b0a0">
+				<Properties>
+					<Name>ФотоаппаратыНабор</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Набор (Фотоаппараты и лампы-вспышки)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="a4c82c24-2684-4ad8-9cd1-6b3188904f10">
+				<Properties>
+					<Name>АнтисептикиНабор</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Набор (Антисептики)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="32e88249-41d6-4761-9dbc-99c6b035b1ea">
+				<Properties>
+					<Name>МолочнаяПродукцияПодконтрольнаяВЕТИСНабор</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Набор (Молочная продукция подконтрольная ВЕТИС)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="f33ea3f2-28d5-42c7-a6f7-eb6d98e6e924">
+				<Properties>
+					<Name>МолочнаяПродукцияБезВЕТИСНабор</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Набор (Молочная продукция без ВЕТИС)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="7832a29c-a665-4201-9536-262236c0edd3">
+				<Properties>
+					<Name>АнтисептикиГрупповаяУпаковка</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Групповая упаковка (Антисептики)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="55ca5ca3-470c-4a5a-bfb3-54a35eef524d">
+				<Properties>
+					<Name>МолочнаяПродукцияПодконтрольнаяВЕТИСГрупповаяУпаковка</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Групповая упаковка (Молочная продукция подконтрольная ВЕТИС)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="c9b7cf39-241c-4091-b6a1-f5a18507c014">
+				<Properties>
+					<Name>МолочнаяПродукцияБезВЕТИСГрупповаяУпаковка</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Групповая упаковка (Молочная продукция без ВЕТИС)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="ef035446-cc41-4f53-8de4-af46a4414c65">
+				<Properties>
+					<Name>ПивоГрупповаяУпаковка</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Групповая упаковка (Пиво)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="b7007303-72e4-4fe1-b697-1cba9caa2da8">
+				<Properties>
+					<Name>УпакованнаяВодаГрупповаяУпаковка</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Групповая упаковка (Упакованная вода)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="d4a32da3-616e-4bc3-be62-e200cca443c2">
+				<Properties>
+					<Name>СоковаяПродукция</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Соковая продукция</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="1924f62c-c3b4-4108-946c-76212811aa73">
+				<Properties>
+					<Name>БезалкогольноеПиво</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Безалкогольное пиво</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="8b40b941-7852-4331-af6b-7912d4ff8ad6">
+				<Properties>
+					<Name>БАДыНабор</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Набор (БАДы)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="cb53879f-4d02-4731-b67e-80a129271354">
+				<Properties>
+					<Name>БАДыГрупповаяУпаковка</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Групповая упаковка (БАДы)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="7989b8fa-0344-4195-a3be-b64fad8208fb">
+				<Properties>
+					<Name>БАДыСтандартныйКМ</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>БАДы - Стандартный КМ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="de6aadaf-13f8-4996-8982-aa9700d2ddb1">
+				<Properties>
+					<Name>БАДыНаборСтандартныйКМ</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Набор (БАДы - Стандартный КМ)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="6894a1cd-32a6-4609-89e4-2e732b784a8e">
+				<Properties>
+					<Name>БАДыГрупповаяУпаковкаСтандартныйКМ</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Групповая упаковка (БАДы - Стандартный КМ)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="ecb19756-3cc9-43a5-a713-62ff1fa570a3">
+				<Properties>
+					<Name>АнтисептикиСтандартныйКМ</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Антисептики - Стандартный КМ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="b8fe0933-ab32-43b8-90f0-b2d84df00d9a">
+				<Properties>
+					<Name>АнтисептикиНаборСтандартныйКМ</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Набор (Антисептики - Стандартный КМ)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="3deca0fd-a503-4b96-988e-3a52699a5150">
+				<Properties>
+					<Name>АнтисептикиГрупповаяУпаковкаСтандартныйКМ</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Групповая упаковка (Антисептики - Стандартный КМ)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="68a80a20-593d-4ea8-b801-135a0f28f18e">
+				<Properties>
+					<Name>КреслаКоляскиНабор</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Набор (Медицинские изделия)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="82a03ac3-7689-43f1-adbe-ebfb5c501e64">
+				<Properties>
+					<Name>КреслаКоляскиГрупповаяУпаковка</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Групповая упаковка (Медицинские изделия)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="611eac54-b9ed-498f-b191-cedc0f6c900a">
+				<Properties>
+					<Name>СоковаяПродукцияНабор</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Набор (Соковая продукция)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="bf31bd07-33a1-493f-af1d-c1070304fb70">
+				<Properties>
+					<Name>СоковаяПродукцияГрупповаяУпаковка</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Групповая упаковка (Соковая продукция)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="89ce9c43-7e51-46e1-8035-1b192cf6646d">
+				<Properties>
+					<Name>Морепродукты</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Морепродукты</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="56aa502c-3977-4f77-96f1-ab553299d35f">
+				<Properties>
+					<Name>МорепродуктыГрупповаяУпаковка</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Групповая упаковка (Морепродукты)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="eefa8296-22f3-4620-a2e8-c6b98ba6bade">
+				<Properties>
+					<Name>МорепродуктыСтандартныйКМ</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Морепродукты - Стандартный КМ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="7383b0c0-f752-4712-a834-329208867a60">
+				<Properties>
+					<Name>МорепродуктыГрупповаяУпаковкаСтандартныйКМ</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Групповая упаковка (Морепродукты - Стандартный КМ)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

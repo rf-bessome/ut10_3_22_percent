@@ -1,0 +1,859 @@
+{
+	"lastChangeDate": "20230711",
+	"pageSize": 10,
+	"elements": [{
+		"code": "50",
+		"description": "Подписывать и представлять статистические формы отчетности",
+		"type": "B2B",
+		"lastChangeDate": "20230711",
+		"script": "",
+		"rules": [
+		{
+          "fieldName": "ВидДокумента",
+          "startValue": 0,
+          "endValue": 0,
+          "list": [
+			{
+              "appDocTypeValue": "",
+              "docTypeValue": "Отчет"
+            },
+			{
+			  "appDocTypeValue": "",
+              "docTypeValue": "Прочее"
+            }
+          ]
+        }
+		]
+	}, {
+		"code": "54",
+		"description": "Подписывать счета на оплату",
+		"type": "B2B",
+		"lastChangeDate": "20230711",
+		"script": "",
+		"rules": [
+		{
+          "fieldName": "ВидДокумента",
+          "startValue": 0,
+          "endValue": 0,
+          "list": [
+			{
+              "appDocTypeValue": "",
+              "docTypeValue": "СчетНаОплату"
+            },
+			{
+			  "appDocTypeValue": "",
+              "docTypeValue": "Прочее"
+            }
+          ]
+        }
+		]
+	}, {
+		"code": "55",
+		"description": "Подписывать отчеты госпосредника",
+		"type": "B2B",
+		"lastChangeDate": "20230711",
+		"script": "",
+		"rules": [
+		{
+          "fieldName": "ВидДокумента",
+          "startValue": 0,
+          "endValue": 0,
+          "list": [
+			{
+              "appDocTypeValue": "",
+              "docTypeValue": "Отчет"
+            },
+			{
+			  "appDocTypeValue": "",
+              "docTypeValue": "Прочее"
+            }
+          ]
+        }
+		]
+	}, {
+		"code": "58",
+		"description": "Подписывать акты выполненных работ (услуг)",
+		"type": "B2B",
+		"lastChangeDate": "20230711",
+		"script": "",
+		"rules": [
+		{
+          "fieldName": "ВидДокумента",
+          "startValue": 0,
+          "endValue": 0,
+          "list": [
+			{
+              "appDocTypeValue": "",
+              "docTypeValue": "АктВыполненныхРабот"
+            },
+			{
+              "appDocTypeValue": "",
+              "docTypeValue": "ПриложениеКАкту"
+            },
+			{
+			  "appDocTypeValue": "",
+              "docTypeValue": "Прочее"
+            }
+          ]
+        }
+		]
+	}, {
+		"code": "61",
+		"description": "Подписание реестров субъектов и проверок, направляемых ФОИВ в Росфинмониторинг",
+		"type": "B2B",
+		"lastChangeDate": "20230711",
+		"script": "",
+		"rules": [
+		{
+          "fieldName": "ВидДокумента",
+          "startValue": 0,
+          "endValue": 0,
+          "list": [
+			{
+              "appDocTypeValue": "",
+              "docTypeValue": "Отчет"
+            },
+			{
+			  "appDocTypeValue": "",
+              "docTypeValue": "Прочее"
+            }
+          ]
+        }
+		]
+	}, {
+		"code": "62",
+		"description": "Подписание формализованных электронных сообщений (ФЭС), направляемых в Росфинмониторинг финансовыми организациями и содержащих сведения о финансовых операции с денежными средствами или иным имуществом",
+		"type": "B2B",
+		"lastChangeDate": "20230711",
+		"script": "",
+		"rules": []
+	}, {
+		"code": "41",
+		"description": "Получать и осуществлять доступ в личный кабинет Доверителя в Информационной системе",
+		"type": "B2B",
+		"lastChangeDate": "20230711",
+		"script": "",
+		"rules": []
+	}, {
+		"code": "01",
+		"description": "Подписывать cчета-фактуры/УПД",
+		"type": "B2B",
+		"lastChangeDate": "20230711",
+		"script": "",
+		"rules": [
+		{
+          "fieldName": "ВидДокумента",
+          "startValue": 0,
+          "endValue": 0,
+          "list": [
+			{
+              "appDocTypeValue": "",
+              "docTypeValue": "СчетФактура"
+            },
+			{
+              "appDocTypeValue": "",
+              "docTypeValue": "КорректировочныйСчетФактура"
+            },
+			{
+			  "appDocTypeValue": "",
+              "docTypeValue": "УПД"
+            },
+			{
+              "appDocTypeValue": "",
+              "docTypeValue": "УКД"
+            },
+			{
+			  "appDocTypeValue": "",
+              "docTypeValue": "Прочее"
+            }
+          ]
+        }
+		]
+	}, {
+		"code": "02",
+		"description": "Подписывать договоры",
+		"type": "B2B",
+		"lastChangeDate": "20230711",
+		"script": "",
+		"rules": [
+		{
+          "fieldName": "ВидДокумента",
+          "startValue": 0,
+          "endValue": 0,
+          "list": [
+			{
+              "appDocTypeValue": "",
+              "docTypeValue": "Договор"
+            },
+			{
+              "appDocTypeValue": "",
+              "docTypeValue": "ДоговорнойДокумент"
+            },
+			{
+              "appDocTypeValue": "",
+              "docTypeValue": "ДополнительноеСоглашение"
+            },
+			{
+              "appDocTypeValue": "",
+              "docTypeValue": "СоглашениеОбЭДО"
+            },
+			{
+              "appDocTypeValue": "",
+              "docTypeValue": "ЭДФ"
+            },
+			{
+			  "appDocTypeValue": "",
+              "docTypeValue": "Прочее"
+            }
+          ]
+        }
+		]
+	}, {
+		"code": "43",
+		"description": "Представлять в Информационную систему заявления, уведомления, иные необходимые документы, сведения и информацию, получать любые сведения и документы, адресованные Доверителю",
+		"type": "B2B",
+		"lastChangeDate": "20230711",
+		"script": "",
+		"rules": [
+		{
+          "fieldName": "ВидДокумента",
+          "startValue": 0,
+          "endValue": 0,
+          "list": [
+			{
+			  "appDocTypeValue": "",
+              "docTypeValue": "Прочее"
+            }
+          ]
+        }
+		]
+	}, {
+		"code": "03",
+		"description": "Подписывать акты",
+		"type": "B2B",
+		"lastChangeDate": "20230711",
+		"script": "",
+		"rules": [
+		{
+          "fieldName": "ВидДокумента",
+          "startValue": 0,
+          "endValue": 0,
+          "list": [
+			{
+              "appDocTypeValue": "",
+              "docTypeValue": "АктВыполненныхРабот"
+            },
+			{
+              "appDocTypeValue": "",
+              "docTypeValue": "АктПриемкиСтроительныхРаботУслуг"
+            },
+			{
+              "appDocTypeValue": "",
+              "docTypeValue": "КС11"
+            },
+			{
+              "appDocTypeValue": "",
+              "docTypeValue": "КС2"
+            },
+			{
+              "appDocTypeValue": "",
+              "docTypeValue": "КС3"
+            },
+			{
+              "appDocTypeValue": "",
+              "docTypeValue": "ПриложениеКАкту"
+            },
+			{
+			  "appDocTypeValue": "",
+              "docTypeValue": "Прочее"
+            }
+          ]
+        }
+		]
+	}, {
+		"code": "05",
+		"description": "Подписывать транспортные накладные",
+		"type": "B2B",
+		"lastChangeDate": "20230711",
+		"script": "",
+		"rules": [
+		{
+          "fieldName": "ВидДокумента",
+          "startValue": 0,
+          "endValue": 0,
+          "list": [
+			{
+              "appDocTypeValue": "",
+              "docTypeValue": "ЭТрН"
+            },
+			{
+			  "appDocTypeValue": "",
+              "docTypeValue": "Прочее"
+            }
+          ]
+        }
+		]
+	}, {
+		"code": "06",
+		"description": "Подписывать дарственные",
+		"type": "B2B",
+		"lastChangeDate": "20230711",
+		"script": "",
+		"rules": [
+		{
+          "fieldName": "ВидДокумента",
+          "startValue": 0,
+          "endValue": 0,
+          "list": [
+			{
+			  "appDocTypeValue": "",
+              "docTypeValue": "Прочее"
+            }
+          ]
+        }
+		]
+	}, {
+		"code": "44",
+		"description": "Заключать, изменять и расторгать договоры, предусмотренные законодательством Российской Федерации, с оператором Информационной системы",
+		"type": "B2B",
+		"lastChangeDate": "20230711",
+		"script": "",
+		"rules": [
+		{
+          "fieldName": "ВидДокумента",
+          "startValue": 0,
+          "endValue": 0,
+          "list": [
+			{
+			  "appDocTypeValue": "",
+              "docTypeValue": "КонтрактЕИС"
+            },
+			{
+			  "appDocTypeValue": "",
+              "docTypeValue": "Прочее"
+            }
+          ]
+        }
+		]
+	}, {
+		"code": "07",
+		"description": "Работать с ГИС «Капиталовложения»",
+		"type": "B2B",
+		"lastChangeDate": "20230711",
+		"script": "",
+		"rules": []
+	}, {
+		"code": "08",
+		"description": "Подписывать документы СЗПК",
+		"type": "B2B",
+		"lastChangeDate": "20230711",
+		"script": "",
+		"rules": []
+	}, {
+		"code": "13",
+		"description": "Утверждение Сведений об операциях с целевыми средствами (код формы по ОКУД 0501213)",
+		"type": "B2B",
+		"lastChangeDate": "20230711",
+		"script": "",
+		"rules": []
+	}, {
+		"code": "14",
+		"description": "Распоряжение банковскими счетами",
+		"type": "B2B",
+		"lastChangeDate": "20230711",
+		"script": "",
+		"rules": [
+		{
+          "fieldName": "ВидДокумента",
+          "startValue": 0,
+          "endValue": 0,
+          "list": [
+			{
+              "appDocTypeValue": "",
+              "docTypeValue": "СчетНаОплату"
+            },
+			{
+              "appDocTypeValue": "",
+              "docTypeValue": "ПлатежноеПоручение"
+            },
+			{
+			  "appDocTypeValue": "",
+              "docTypeValue": "Прочее"
+            }
+          ]
+        }
+		]
+	}, {
+		"code": "15",
+		"description": "Заключать любые сделки с цифровыми финансовыми активами, иными цифровыми правами и цифровой валютой, распоряжаться и осуществлять иные действия с цифровыми финансовыми активами, иными цифровыми правами и цифровой валютой",
+		"type": "B2B",
+		"lastChangeDate": "20230711",
+		"script": "",
+		"rules": [
+		{
+          "fieldName": "ВидДокумента",
+          "startValue": 0,
+          "endValue": 0,
+          "list": [
+			{
+			  "appDocTypeValue": "",
+              "docTypeValue": "Прочее"
+            }
+          ]
+        }
+		]
+	}, {
+		"code": "16",
+		"description": "Направлять оператору информационной системы, оператору обмена цифровых финансовых активов, номинальному держателю заявки, уведомления, запросы, письма, требования и любые иные документы в отношении выпуска, обращения, распоряжения цифровыми финансовыми активами, иными цифровыми правами, цифровой валюты",
+		"type": "B2B",
+		"lastChangeDate": "20230711",
+		"script": "",
+		"rules": [
+		{
+          "fieldName": "ВидДокумента",
+          "startValue": 0,
+          "endValue": 0,
+          "list": [
+			{
+			  "appDocTypeValue": "",
+              "docTypeValue": "Прочее"
+            }
+          ]
+        }
+		]
+	}, {
+		"code": "17",
+		"description": "Направлять оператору информационной системы, оператору обмена цифровых финансовых активов, номинальному держателю заявки уведомления, запросы, письма, требования и любые иные документы в отношении цифровых финансовых активов, иных цифровых прав и цифровой валюты",
+		"type": "B2B",
+		"lastChangeDate": "20230711",
+		"script": "",
+		"rules": [
+		{
+          "fieldName": "ВидДокумента",
+          "startValue": 0,
+          "endValue": 0,
+          "list": [
+			{
+			  "appDocTypeValue": "",
+              "docTypeValue": "Прочее"
+            }
+          ]
+        }
+		]
+	}, {
+		"code": "18",
+		"description": "Запрашивать и получать от оператора информационной системы, оператора обмена цифровых финансовых активов, номинального держателя информацию об операциях с цифровыми финансовыми активами, иными цифровыми правами и цифровой валютой, сведения об имуществе на счете владельца, иные необходимые документы",
+		"type": "B2B",
+		"lastChangeDate": "20230711",
+		"script": "",
+		"rules": [
+		{
+          "fieldName": "ВидДокумента",
+          "startValue": 0,
+          "endValue": 0,
+          "list": [
+			{
+			  "appDocTypeValue": "",
+              "docTypeValue": "Прочее"
+            }
+          ]
+        }
+		]
+	}, {
+		"code": "19",
+		"description": "Подписывать решение о выпуске цифровых финансовых активов и иных цифровых прав, а также любые иные документы, связанные с выпуском, обращением, осуществлением прав по цифровым правам",
+		"type": "B2B",
+		"lastChangeDate": "20230711",
+		"script": "",
+		"rules": [
+		{
+          "fieldName": "ВидДокумента",
+          "startValue": 0,
+          "endValue": 0,
+          "list": [
+			{
+			  "appDocTypeValue": "",
+              "docTypeValue": "Прочее"
+            }
+          ]
+        }
+		]
+	}, {
+		"code": "51",
+		"description": "Подписывать и представлять отчет по квотированию",
+		"type": "B2B",
+		"lastChangeDate": "20230711",
+		"script": "",
+		"rules": [
+		{
+          "fieldName": "ВидДокумента",
+          "startValue": 0,
+          "endValue": 0,
+          "list": [
+			{
+			  "appDocTypeValue": "",
+              "docTypeValue": "Отчет"
+            },
+			{
+			  "appDocTypeValue": "",
+              "docTypeValue": "Прочее"
+            }
+          ]
+        }
+		]
+	}, {
+		"code": "20",
+		"description": "Подписание документов, направляемых в Росалкогольрегулирование",
+		"type": "B2B",
+		"lastChangeDate": "20230711",
+		"script": "",
+		"rules": [
+		{
+          "fieldName": "ВидДокумента",
+          "startValue": 0,
+          "endValue": 0,
+          "list": [
+			{
+			  "appDocTypeValue": "",
+              "docTypeValue": "Прочее"
+            }
+          ]
+        }
+		]
+	}, {
+		"code": "37",
+		"description": "Подписывать и представлять согласие налогоплательщика (плательщика страховых взносов) на представление сведений, составляющих налоговую тайну, со стороны лица, раскрывающего сведения, составляющие налоговую тайну",
+		"type": "B2B",
+		"lastChangeDate": "20230711",
+		"script": "",
+		"rules": [
+		{
+          "fieldName": "ВидДокумента",
+          "startValue": 0,
+          "endValue": 0,
+          "list": [
+			{
+			  "appDocTypeValue": "",
+              "docTypeValue": "Прочее"
+            }
+          ]
+        }
+		]
+	}, {
+		"code": "38",
+		"description": "Подписывать и представлять согласие налогоплательщика (плательщика страховых взносов) на представление сведений, составляющих налоговую тайну, со стороны лица, запрашивающего сведения, составляющие налоговую тайну",
+		"type": "B2B",
+		"lastChangeDate": "20230711",
+		"script": "",
+		"rules": [
+		{
+          "fieldName": "ВидДокумента",
+          "startValue": 0,
+          "endValue": 0,
+          "list": [
+			{
+			  "appDocTypeValue": "",
+              "docTypeValue": "Прочее"
+            }
+          ]
+        }
+		]
+	}, {
+		"code": "39",
+		"description": "Подписывать и представлять запрос на представление сведений, составляющих налоговую тайну",
+		"type": "B2B",
+		"lastChangeDate": "20230711",
+		"script": "",
+		"rules": [
+		{
+          "fieldName": "ВидДокумента",
+          "startValue": 0,
+          "endValue": 0,
+          "list": [
+			{
+			  "appDocTypeValue": "",
+              "docTypeValue": "Прочее"
+            }
+          ]
+        }
+		]
+	}, {
+		"code": "40",
+		"description": "Представлять интересы Доверителя перед оператором Информационной системы",
+		"type": "B2B",
+		"lastChangeDate": "20230711",
+		"script": "",
+		"rules": [
+		{
+          "fieldName": "ВидДокумента",
+          "startValue": 0,
+          "endValue": 0,
+          "list": [
+			{
+			  "appDocTypeValue": "",
+              "docTypeValue": "Прочее"
+            }
+          ]
+        }
+		]
+	}, {
+		"code": "42",
+		"description": "Совершать все необходимые действия в Информационной системе, в том числе по регистрации товаров в ней, заказу кодов маркировки и средств идентификации, списанию кодов маркировки, перемаркировке",
+		"type": "B2B",
+		"lastChangeDate": "20230711",
+		"script": "",
+		"rules": [
+		{
+          "fieldName": "ВидДокумента",
+          "startValue": 0,
+          "endValue": 0,
+          "list": [
+			{
+			  "appDocTypeValue": "",
+              "docTypeValue": "Прочее"
+            }
+          ]
+        }
+		]
+	}, {
+		"code": "45",
+		"description": "Подписывать заявления, уведомления, заявки, письма и любые иные документы в рамках договоров, заключенных с оператором Информационной системы, в том числе заверять копии документов Доверителя",
+		"type": "B2B",
+		"lastChangeDate": "20230711",
+		"script": "",
+		"rules": [
+		{
+          "fieldName": "ВидДокумента",
+          "startValue": 0,
+          "endValue": 0,
+          "list": [
+			{
+			  "appDocTypeValue": "",
+              "docTypeValue": "Прочее"
+            }
+          ]
+        }
+		]
+	}, {
+		"code": "GIISDMDK01",
+		"description": "Предоставление доступа в ГИИС ДМДК",
+		"type": "B2B",
+		"lastChangeDate": "20230711",
+		"script": "",
+		"rules": []
+	}, {
+		"code": "GIISDMDK02",
+		"description": "Предоставление сведений в ГИИС ДМДК",
+		"type": "B2B",
+		"lastChangeDate": "20230711",
+		"script": "",
+		"rules": [
+		{
+          "fieldName": "ВидДокумента",
+          "startValue": 0,
+          "endValue": 0,
+          "list": [
+			{
+			  "appDocTypeValue": "",
+              "docTypeValue": "Прочее"
+            }
+          ]
+        }
+		]
+	}, {
+		"code": "52",
+		"description": "Подписывать акты сверки по расчетам с контрагентами",
+		"type": "B2B",
+		"lastChangeDate": "20230711",
+		"script": "",
+		"rules": [
+		{
+          "fieldName": "ВидДокумента",
+          "startValue": 0,
+          "endValue": 0,
+          "list": [
+			{
+			  "appDocTypeValue": "",
+              "docTypeValue": "АктСверки"
+            },
+			{
+			  "appDocTypeValue": "",
+              "docTypeValue": "АктСверкиВзаиморасчетов"
+            },
+			{
+			  "appDocTypeValue": "",
+              "docTypeValue": "Прочее"
+            }
+          ]
+        }
+		]
+	}, {
+		"code": "56",
+		"description": "Подписывать отчеты госзаказчика",
+		"type": "B2B",
+		"lastChangeDate": "20230711",
+		"script": "",
+		"rules": [
+		{
+          "fieldName": "ВидДокумента",
+          "startValue": 0,
+          "endValue": 0,
+          "list": [
+			{
+			  "appDocTypeValue": "",
+              "docTypeValue": "Отчет"
+            },
+			{
+			  "appDocTypeValue": "",
+              "docTypeValue": "Прочее"
+            }
+          ]
+        }
+		]
+	}, {
+		"code": "59",
+		"description": "Подписание обращений, направляемых гражданами, организациями и др. лицами в Росфинмониторинг",
+		"type": "B2B",
+		"lastChangeDate": "20230711",
+		"script": "",
+		"rules": [
+		{
+          "fieldName": "ВидДокумента",
+          "startValue": 0,
+          "endValue": 0,
+          "list": [
+			{
+			  "appDocTypeValue": "",
+              "docTypeValue": "Прочее"
+            }
+          ]
+        }
+		]
+	}, {
+		"code": "63",
+		"description": "Подписание заявления на получение ранее направленных в Росфинмониторинг ФЭС, квитанций, УКЭП",
+		"type": "B2B",
+		"lastChangeDate": "20230711",
+		"script": "",
+		"rules": [
+		{
+          "fieldName": "ВидДокумента",
+          "startValue": 0,
+          "endValue": 0,
+          "list": [
+			{
+			  "appDocTypeValue": "",
+              "docTypeValue": "Прочее"
+            }
+          ]
+        }
+		]
+	}, {
+		"code": "04",
+		"description": "Подписывать товарные накладные",
+		"type": "B2B",
+		"lastChangeDate": "20230711",
+		"script": "",
+		"rules": [
+		{
+          "fieldName": "ВидДокумента",
+          "startValue": 0,
+          "endValue": 0,
+          "list": [
+			{
+			  "appDocTypeValue": "",
+              "docTypeValue": "ТоварнаяНакладная"
+            },
+			{
+			  "appDocTypeValue": "",
+              "docTypeValue": "Прочее"
+            }
+          ]
+        }
+		]
+	}, {
+		"code": "53",
+		"description": "Подписывать отчеты комиссионера",
+		"type": "B2B",
+		"lastChangeDate": "20230711",
+		"script": "",
+		"rules": [
+		{
+          "fieldName": "ВидДокумента",
+          "startValue": 0,
+          "endValue": 0,
+          "list": [
+			{
+			  "appDocTypeValue": "",
+              "docTypeValue": "СведенияОЗакупкеКомиссионером"
+            },
+			{
+			  "appDocTypeValue": "",
+              "docTypeValue": "СведенияОРеализацииКомиссионером"
+            },
+			{
+			  "appDocTypeValue": "",
+              "docTypeValue": "КорректировкаСведенийОЗакупкеКомиссионером"
+            },
+			{
+			  "appDocTypeValue": "",
+              "docTypeValue": "КорректировкаСведенийОРеализацииКомиссионером"
+            },
+			{
+			  "appDocTypeValue": "",
+              "docTypeValue": "Прочее"
+            }
+          ]
+        }
+		]
+	}, {
+		"code": "57",
+		"description": "Подписывать отчеты по исполнению поручения",
+		"type": "B2B",
+		"lastChangeDate": "20230711",
+		"script": "",
+		"rules": [
+		{
+          "fieldName": "ВидДокумента",
+          "startValue": 0,
+          "endValue": 0,
+          "list": [
+			{
+			  "appDocTypeValue": "",
+              "docTypeValue": "Отчет"
+            },
+			{
+			  "appDocTypeValue": "",
+              "docTypeValue": "Прочее"
+            }
+          ]
+        }
+		]
+	}, {
+		"code": "60",
+		"description": "Подписание организациями, ИП и др. лицами ответов на запросы Росфинмониторинга",
+		"type": "B2B",
+		"lastChangeDate": "20230711",
+		"script": "",
+		"rules": [
+		{
+          "fieldName": "ВидДокумента",
+          "startValue": 0,
+          "endValue": 0,
+          "list": [
+			{
+			  "appDocTypeValue": "",
+              "docTypeValue": "Прочее"
+            }
+          ]
+        }
+		]
+	}, {
+		"code": "64",
+		"description": "Подписание информации и документов, направляемых в Росфинмониторинг посредством личного кабинета на официальном сайте Росфинмониторинга, за исключением обращений, запросов, ФЭС, ответов на запросы и обращения",
+		"type": "B2B",
+		"lastChangeDate": "20230711",
+		"script": "",
+		"rules": []
+	}]
+}

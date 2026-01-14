@@ -1,0 +1,705 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.18">
+	<Item id="e2a05b11-6891-45a5-8867-b40f9269585b">
+		<Name>Драйвер1СРарусДисплеиПокупателя</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>1С-Рарус:Дисплеи покупателя</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="634e6e2c-236b-4539-ad24-7afd0fdf45c3">
+		<Name>Драйвер1СРарусФискальныеРегистраторыМебиус</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>1С-Рарус:Фискальные регистраторы Мебиус</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e7dc1b34-9c96-42b0-a854-ca32827b9730">
+		<Name>Драйвер1СРарусФискальныеРегистраторыФеликс</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>1С-Рарус:Фискальные регистраторы Феликс</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0fb47999-145e-4fae-9178-f543d5134f76">
+		<Name>Драйвер1СWebСервисОборудование</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>1С:Web-сервис оборудование</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="2a1e939c-ac01-4046-833b-2372254f433a">
+		<Name>Драйвер1СДисплейПокупателя</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>1С:Дисплей покупателя</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="77138a59-b49e-4a59-9237-07b41516d5f3">
+		<Name>Драйвер1СККМED</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>1С:ККМ ED</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a2c9e240-8f48-4d2a-8650-336335b74dfe">
+		<Name>Драйвер1СККМOffline</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>1С:Офлайн оборудование</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ec7e70ba-8bb3-4c34-b341-154a0c7327ae">
+		<Name>Драйвер1СПринтерЧеков</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>1С:Принтер чеков</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="3ed25985-ea6e-45f8-9ca8-ed3c30face07">
+		<Name>Драйвер1ССканерыШтрихкода</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>1С:Сканеры штрихкода (COM)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d3bd3d24-1dbd-45b2-96a4-422e95d8c669">
+		<Name>Драйвер1ССканерыШтрихкодаNative</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>1С:Сканеры штрихкода (NativeApi)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e024c2ff-0801-4e5b-827e-2d33b06c8aa6">
+		<Name>Драйвер1ССчитывателиМагнитныхКарт</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>1С:Считыватели магнитных карт</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4e0f6233-73fb-4315-b5d0-73b1c6b6d8d0">
+		<Name>Драйвер1ССчитывателиМагнитныхКартNative</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>1С:Считыватели магнитных карт (NativeApi)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e7d2893b-81ae-48b4-83db-b8f433f02989">
+		<Name>Драйвер1СФискальныйРегистраторЭмулятор</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>1С:Фискальный регистратор (эмулятор)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="793adf2d-cd38-4fcc-9578-e5028a61dc53">
+		<Name>Драйвер1СЭвоторККМOffline</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>1С:Эвотор</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="122cd7d2-a60d-401a-a43c-39e09d2fb9c0">
+		<Name>Драйвер1СЭквайринговыеТерминалыСбербанк</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>1С:Эквайринговые терминалы Сбербанк</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="03e4f91b-d9d1-43a5-942d-6676c9092d70">
+		<Name>ДрайверACOMВесыСПечатьюЭтикеток</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>ACOM:Весы с печатью этикеток</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="1ed83699-a6f3-4df8-97e6-a3c62ce3f4a0">
+		<Name>ДрайверARCUS2ЭквайринговыеТерминалыIngenico</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>ARCUS2:Эквайринговые терминалы Ingenico</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ea01b751-27af-4976-a091-772b1be128d8">
+		<Name>ДрайверARSККТ54ФЗ</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>ars:ККТ с передачей данных в ОФД (54-ФЗ)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e90bb3ac-bdfd-4191-a1ef-8da0ada8aa69">
+		<Name>ДрайверBizerbaВесыСПечатьюЭтикеток</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Bizerba:Весы с печатью этикеток</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5affbf6a-35bc-4fe2-8aa7-2f1e32bdccbf">
+		<Name>ДрайверCASВесыСПечатьюЭтикеток</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>CAS:Весы с печатью этикеток</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="10d0fb05-98b0-4463-b933-9911eb6aa195">
+		<Name>ДрайверCASЭлектронныеВесы</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>CAS:Электронные весы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e0de2979-122e-4e02-97e8-3e5f34ce54ea">
+		<Name>ДрайверERFIDСчитывательRFID</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>ERFID:Считыватель RFID</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c1f77413-55a6-4ebd-91cf-b6438589b53e">
+		<Name>ДрайверFITККТ54ФЗ</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>FIT:ККТ с передачей данных в ОФД (54-ФЗ)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e1dfcc14-aa31-4915-af36-5a327be7e9c6">
+		<Name>ДрайверIboxProПоддержкаMPosЭквайринга</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>iboxPro:Поддержка mPos эквайринга</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="691d63e7-4357-4d26-9352-2a821a15499b">
+		<Name>ДрайверIngenicoЭквайринговыеТерминалыARCUS</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Ingenico:Драйвер эквайринговой системы ARCUS 2.1</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f0f6a013-4b63-4cc7-85f7-701a3b475740">
+		<Name>ДрайверIronLogicСчитывателиБесконтактныхКарт</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>IronLogic:Считыватели бесконтактных карт Z-2</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f5e8b551-be3e-406d-9c12-6d51b6885ae7">
+		<Name>ДрайверISBCСчитывательRFID</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>ISBC:Считыватель RFID</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="864b6f93-8935-46be-b05c-616605a9095a">
+		<Name>ДрайверMPos2canЭквайринг</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>mPos2can:Поддержка 2can эквайринга</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="af2b4ee6-c7c2-4e0b-95a1-208e8360407e">
+		<Name>ДрайверMSTARККТ54ФЗ</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>MSTAR:ККТ с передачей данных в ОФД (ФФД 1.2)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="75920778-c056-4901-90e4-46bd98708b50">
+		<Name>ДрайверNEWTONККТ54ФЗ</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>NEWTON:ККТ с передачей данных в ОФД (54-ФЗ)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d0d486f8-bf49-4ef9-aaf7-13f1027c9f0c">
+		<Name>ДрайверPOSUAДисплеиПокупателя</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>POSUA: Дисплеи покупателя</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="17e39f55-3aeb-4c7e-8d4c-fa9b08af5c4d">
+		<Name>ДрайверRightScanТерминалыСбораДанных</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>RightScan:Терминалы сбора данных (ПО RS:Mobile ACS)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="779f3724-278a-4745-8fac-856b730cdbc4">
+		<Name>ДрайверSKAM1CЭквайринговыеСистемы</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>SKAM-1C: Эквайринговые системы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="b0c1a57b-cb00-477e-b0b5-e026db5c69e5">
+		<Name>ДрайверSKAMUNIPOSЭквайринговыеСистемы</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>SKAM-UNIPOS:Эквайринговое решение СофтКейс</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="cc00495d-735b-4419-b4f1-0ab74300e3ee">
+		<Name>ДрайверTRPOSЭквайринговыеТерминалы</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>TRPOS:Эквайринговые терминалы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="605f446e-48e4-47d0-9715-96a66c87478a">
+		<Name>ДрайверUCSEFTPOSЭквайринговыеТерминалы</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>UCS-EFTPOS:Эквайринговые терминалы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6bcf325f-9bc5-4a4b-9f5f-f8ea85cd4105">
+		<Name>ДрайверWNJIККТ54ФЗ</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>WNJI:ККТ с передачей данных в ОФД (54-ФЗ)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="426601d7-ed94-4715-a586-092338b693f8">
+		<Name>ДрайверАТОЛВесыСПечатьюЭтикеток8X</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>АТОЛ:Весы c печатью этикеток 8.X</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="44a50f01-ff26-4c19-a113-23b9f223daa7">
+		<Name>ДрайверАтолДисплеиПокупателя</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>АТОЛ:Дисплеи покупателя</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="77c3a43f-11f9-4d10-aa32-c2bb48f423a0">
+		<Name>ДрайверАтолДисплеиПокупателя8X</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>АТОЛ:Дисплеи покупателя 8.X</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="54d03b50-a2f1-4b67-a37f-230afaea699e">
+		<Name>ДрайверАтолККТ54ФЗ</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>АТОЛ:ККТ с передачей данных в ОФД (54-ФЗ)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="42b46558-b8fd-4bcf-a43a-1f2953aa3f57">
+		<Name>ДрайверАтолККТ54ФЗ10X</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>АТОЛ:ККТ с передачей данных в ОФД (54-ФЗ) 10.x</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="8120e871-a45d-430a-a8e9-455b0468da9c">
+		<Name>ДрайверАтолККТ54ФЗ9X</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>АТОЛ:ККТ с передачей данных в ОФД (54-ФЗ) 9.x</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4b0f393e-6beb-418b-baa4-a33eec502ee3">
+		<Name>ДрайверАтолККМOffline</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>АТОЛ:Рабочее место кассира</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="455d306d-5653-495b-ba22-5683b1d854e6">
+		<Name>ДрайверАтолСканерыШтрихкода</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>АТОЛ:Сканеры штрихкода</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="57d20756-a62f-4ba4-9541-724f9e916033">
+		<Name>ДрайверАтолСканерыШтрихкода8X</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>АТОЛ:Сканеры штрихкода 8.X</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4efbb0df-d172-40f5-85c3-0072e83d8f75">
+		<Name>ДрайверАтолСчитывателиМагнитныхКарт</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>АТОЛ:Считыватели магнитных карт</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="33486b9e-3058-47d6-91d1-efa3821b73dd">
+		<Name>ДрайверАтолСчитывателиМагнитныхКарт8X</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>АТОЛ:Считыватели магнитных карт 8.X</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="25483988-7238-4a66-bd73-d35bda09fe0f">
+		<Name>ДрайверАтолТерминалыСбораДанных</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>АТОЛ:Терминалы сбора данных</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="1d38b07e-1f02-40ef-95d3-ed9ea238af3c">
+		<Name>ДрайверАтолТерминалыСбораДанныхMobileLogistics</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>АТОЛ:Терминалы сбора данных MobileLogistics 8.Х</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5626743f-0262-46dd-af0a-68c0ff600413">
+		<Name>ДрайверАтолФискальныеРегистраторыУниверсальный</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>АТОЛ:Фискальные регистраторы (Универсальный)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="92623236-b25e-4867-9ac7-f523d9a75d22">
+		<Name>ДрайверАтолФискальныеРегистраторы</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>АТОЛ:Фискальные регистраторы 6.Х</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="07d20896-0281-428a-910e-3efe4ec93fc2">
+		<Name>ДрайверАтолФискальныеРегистраторы8X</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>АТОЛ:Фискальные регистраторы 8.Х</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d94c3773-ac62-40ea-9457-1f9fb4f2cfc5">
+		<Name>ДрайверАтолЭлектронныеВесы</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>АТОЛ:Электронные весы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="00e52600-c4cd-43c3-8e56-8a4d9de96b44">
+		<Name>ДрайверАтолЭлектронныеВесы8X</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>АТОЛ:Электронные весы 8.Х</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d4e534d9-7fbb-4d14-9fc6-51550c3231ba">
+		<Name>ДрайверВерсияТK1Ф54ФЗ</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Версия-Т:ККТ с передачей данных в ОФД (54-ФЗ)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="70530b3e-c609-4ba3-926e-cd78839429c6">
+		<Name>ДрайверВерсияТФискальныеРегистраторы</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Версия-Т:Фискальные регистратоы КАСБИ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f9497f8c-04a8-4bc9-ac13-f90071d35cf0">
+		<Name>ДрайверГАЗПРОМБАНКЭквайринговыеТерминалы</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>ГАЗПРОМБАНК:Эквайринговые терминалы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="21cd13e7-9f5c-406f-9a61-fbf024a4f9ee">
+		<Name>ДрайверГексагонПринтераЭтикеток</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Гексагон:Принтера этикеток Zebra,Proton,Toshiba-TEC,Datamax-O neil</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="195e0f6c-1100-4275-8e07-146a2c7e22fd">
+		<Name>ДрайверГексагонСканерыШтрихкода</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Гексагон:Сканеры штрихкода Proton</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d9fb4749-08ea-4c0f-aed7-cd97d0a7aa19">
+		<Name>ДрайверГексагонТерминалыСбораДанных</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Гексагон:Терминалы сбора данных Goods</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9654b636-0014-441a-8e1b-b5b5b498fe75">
+		<Name>ДрайверАтолПринтераЭтикеток</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Драйвер атол принтера этикеток</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c00f045d-0e51-4bb0-8256-99cc0392bd92">
+		<Name>ДрайверДримкасККТ54ФЗ</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Дримкас:ККТ с передачей данных в ОФД Вики Принт (54-ФЗ)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="1beecb27-d885-4072-9974-fed404e3f0e8">
+		<Name>ДрайверДримкасФискальныеРегистраторыVikiPrint</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Дримкас:Фискальные регистраторы VikiPrint</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="1e2ec12a-71f8-4a3a-87c4-6a8d6e244c64">
+		<Name>ДрайверИнитпроККТ54ФЗ</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Инитпро:ККТ с передачей данных в ОФД (54-ФЗ)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9552696a-bb89-48e4-8cf1-35b01cc9eede">
+		<Name>ДрайверИнкотексККТ54ФЗ</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Инкотекс:ККТ с передачей данных в ОФД (54-ФЗ)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e7b87622-2552-4639-b53b-3a3aa42c3a21">
+		<Name>ДрайверИНПАСЭквайринговыеТерминалыSmart</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>ИНПАС:Эквайринговые терминалы Smart</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="1c05e18f-39d4-4e93-abe0-ea1324991621">
+		<Name>ДрайверИНПАСЭквайринговыеТерминалыUNIPOS</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>ИНПАС:Эквайринговые терминалы UNIPOS</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="591d5c32-78d1-44c9-96dc-725d4afeaf4b">
+		<Name>ДрайверИскраККТ54ФЗ</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>ИСКРА:ККТ с передачей данных в ОФД (54-ФЗ)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="574c4257-910d-4c22-b96c-4fd1ecb59d8c">
+		<Name>ДрайверИскраФискальныеРегистраторыПрим</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>ИСКРА:Фискальные регистраторы Прим</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="74edf1c0-a35e-4612-85f6-9a3bd5b60c6b">
+		<Name>ДрайверКАСТОМФ54ФЗ</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>КАСТОМ:ККТ с передачей данных в ОФД (54-ФЗ)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="1e5aa39a-d821-428c-b36f-84dcabc2b63a">
+		<Name>ДрайверККСДисплеиПокупателя</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>ККС:Дисплеи покупателя</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ed970b7d-d652-4aca-a6c0-f1066c1cc8ca">
+		<Name>ДрайверККСККТ54ФЗ</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>ККС:ККТ с передачей данных в ОФД (54-ФЗ)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="1208958d-22ef-4863-8fbb-5cebfa5a34b5">
+		<Name>ДрайверККСККТ54ФЗ2Х</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>ККС:ККТ с передачей данных в ОФД (54-ФЗ) 2.х</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="df2d755e-fb4b-4df1-9843-7ec362cd86e6">
+		<Name>ДрайверККСФискальныеРегистраторы</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>ККС:Фискальные регистраторы Спарк</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="76362c29-8b37-41f2-a6c5-8e4cb3e08874">
+		<Name>ДрайверКлеверенсСчитывателиRFID</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Клеверенс:Считыватели RFID</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="df2d0be7-3337-4e84-a1bd-b4cd10dd6ee8">
+		<Name>ДрайверКлеверенсТерминалыСбораДанных</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Клеверенс:Терминалы сбора данных</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="26878bda-9905-4031-9e50-b7571710d296">
+		<Name>ДрайверКристаллСервисДисплеиПокупателяVikiVision</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Кристалл Сервис:Дисплей покупателя VikiVision</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="87573e3c-f2cf-461e-96c6-b6eeef113d8f">
+		<Name>ДрайверКристаллСервисФискальныеРегистраторыPirit</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Кристалл Сервис:Фискальные регистраторы Pirit</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9fa91f5b-ada2-4f7a-a9c9-94d198342eb4">
+		<Name>ДрайверМАСЭлектронныеВесы</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>МАС:Электронные весы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="50a066ba-28a0-4ecb-bfcd-742e9caa8416">
+		<Name>ДрайверМассаКВесыСПечатьюЭтикеток</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Масса-К:Весы с печатью этикеток</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="73ab4acf-7a7d-4e81-a67d-bfbab9d68ad1">
+		<Name>ДрайверМассаКЭлектронныеВесы</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Масса-К:Электронные весы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="b9756965-a295-4fc9-96c5-4bf51a13555a">
+		<Name>ДрайверМЕБИУСККТ54ФЗ</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>МЕБИУС:ККТ с передачей данных в ОФД (54-ФЗ)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6ebd6624-2e06-490d-8f66-32dd88d5e58e">
+		<Name>ДрайверОРИОНФискальныеРегистраторы</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>ОРИОН:Фискальный регистратор ФР01К</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c9c3bbfc-c662-4cd6-8a53-e94c789c5195">
+		<Name>ДрайверРБСВесыCПечатьюЭтикеток</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>РБС:Весы c печатью этикеток KS</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="78352ad0-dec1-49c9-875b-88ee25f6d0f3">
+		<Name>ДрайверРусГардСчитывательМагнитныхКарт</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>РусГард:Считыватель магнитных карт</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="90fc77a1-8a4e-4e1d-b98b-27e994a6043d">
+		<Name>ДрайверСБРФЭквайринговыеТерминалы</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>СБРФ:Эквайринговые терминалы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="05c08f84-fb33-42aa-99ce-354d8f74a344">
+		<Name>ДрайверСервисПлюсВесыСПечатьюЭтикеток</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>СервисПлюс:Весы с печатью этикеток</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="2c2d7f5f-632f-4449-996b-11b996ee1eb6">
+		<Name>ДрайверСервисПлюсЭлектронныеВесы</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>СервисПлюс:Электронные весы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5eef77fa-1a73-4201-9182-de932bf3e342">
+		<Name>ДрайверСканкодДисплеиПокупателя</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Сканкод:Дисплеи покупателя</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a2dbbfd5-d624-4007-abe9-ec3cab38da00">
+		<Name>ДрайверСканкодДисплеиПокупателяNative</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Сканкод:Дисплеи покупателя (NativeAPI)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="38f22c40-4608-401e-8c54-1857238ec22e">
+		<Name>ДрайверСканкодПринтераЭтикетокGodexEZPL8Native</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Сканкод:Принтера этикетокGodexEZPL8 (NativeAPI)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9c51229e-a4da-4957-9773-d59e2bd3af19">
+		<Name>ДрайверСканкодСканерыШтрихкода</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Сканкод:Сканеры штрихкода</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="1496f57d-bec4-4760-8f7d-3d0e8117eabd">
+		<Name>ДрайверСканкодСчитывательRFIDCipherLab</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Сканкод:Считыватели RFID CipherLab</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="3664c6df-f092-4e23-aab4-f1d9ac71dbb3">
+		<Name>ДрайверСканкодТерминалыСбораДанных</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Сканкод:Терминалы сбора данных</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="20ba91b1-e52c-4e00-9282-9caaf86f95d8">
+		<Name>ДрайверСканкодТерминалыСбораДанныхNative</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Сканкод:Терминалы сбора данных CipherLAB 8x00 (NativeApi)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="086d4409-4b9e-4d04-b55d-5a19e957e712">
+		<Name>ДрайверСканкодТерминалыСбораДанныхCipherLab8G2</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Сканкод:Терминалы сбора данных CipherLab8 G2</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4ae34ba5-13aa-4cd1-8c0e-ac46224f39cc">
+		<Name>ДрайверСканситиПринтераЭтикеток</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Скансити:Принтер печати этикеток TSC</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="76464400-1105-449f-82bd-9642be0a2215">
+		<Name>ДрайверСканситиТерминалСбораДанныхCitySoftBusiness</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Скансити:Терминал сбора данных CitySoft Business</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9ee390eb-7f62-4f63-b0f8-2b55964152e9">
+		<Name>ДрайверСканситиТерминалСбораДанныхCitySoftLite</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Скансити:Терминал сбора данных CitySoft Lite</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="bb8097ee-0be5-4b7f-827e-86ea62b6f59c">
+		<Name>ДрайверСканситиТерминалСбораДанныхCitySoftStandart</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Скансити:Терминал сбора данных CitySoft Standart</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4ea32ec9-87a0-4893-9382-4b07d6352d49">
+		<Name>ДрайверСканситиТерминалыСбораДанных</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Скансити:Терминалы сбора данных</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="050699d4-0740-4981-83d0-54fffe47d6a6">
+		<Name>ДрайверСчетмашККТ54ФЗ</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Счетмаш:ККТ с передачей данных в ОФД (54-ФЗ)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="daed1f67-1222-4ca9-8e0c-24d928ffa04c">
+		<Name>ДрайверХарвестрТерминалыСбораДанных</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Харвестр:Приложение сбора данных</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7f1eb099-755b-400e-9c19-45b0e7484a6e">
+		<Name>ДрайверШтрихМВесыСПечатьюЭтикеток</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>ШТРИХ-М:Весы с печатью этикеток</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9c0a4d13-4e29-484b-8a5e-28402199f799">
+		<Name>ДрайверШтрихМВесыСПечатьюЭтикетокШтрихПринт</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>ШТРИХ-М:Весы с печатью этикеток ШТРИХ-ПРИНТ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d33edc70-9859-495c-b9ae-d1c1902ed712">
+		<Name>ДрайверШтрихМДисплеиПокупателя</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>ШТРИХ-М:Дисплеи покупателя</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ea021453-4581-40c1-8bd8-16e52c99f1e6">
+		<Name>ДрайверШтрихМККМOffline</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>ШТРИХ-М:Кассир</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a5f62f02-ebc7-4790-81bc-d0687b8a3022">
+		<Name>ДрайверШтрихМККТ54ФЗ</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>ШТРИХ-М:ККТ с передачей данных в ОФД (54-ФЗ)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d48fe321-568f-4526-863b-dde66a79fc13">
+		<Name>ДрайверШтрихМККТ54ФЗ415</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>ШТРИХ-М:ККТ с передачей данных в ОФД (54-ФЗ) 4.15</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e301c2ee-a692-4117-806c-f32d22b08515">
+		<Name>ДрайверШтрихМПлатежныйТерминалYarus</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>ШТРИХ-М:Платежный терминал Yarus</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="bbf0cd82-7dec-4e20-be2e-3ac2d7c21daf">
+		<Name>ДрайверШтрихМТерминалыСбораДанных</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>ШТРИХ-М:Терминалы сбора данных</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="26e9bb05-6413-4b46-b204-184630267a50">
+		<Name>ДрайверШтрихМФискальныеРегистраторы</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>ШТРИХ-М:Фискальные регистраторы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="12f7e779-16c1-4e7e-b3ea-3d966a85a874">
+		<Name>ДрайверШтрихМФискальныеРегистраторыУниверсальный</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>ШТРИХ-М:Фискальные регистраторы (Универсальный)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ecd67ee9-db4d-42da-b808-b6a2be474305">
+		<Name>ДрайверШтрихМЭлектронныеВесы</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>ШТРИХ-М:Электронные весы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="3bc4164d-f9b5-446b-8da4-8af55081c919">
+		<Name>ДрайверШтрихМЭлектронныеВесыPOS2</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>ШТРИХ-М:Электронные весы POS2</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="3608f6bb-c119-476b-bb44-c86608964393">
+		<Name>ДрайверЭвоторККТ54ФЗ</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Эвотор:ККТ с передачей данных в ОФД (54-ФЗ)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

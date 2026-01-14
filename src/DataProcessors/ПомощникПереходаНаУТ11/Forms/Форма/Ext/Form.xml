@@ -1,0 +1,1227 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Помощник перехода</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаШапка" id="173">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="302"/>
+			<ChildItems>
+				<PictureDecoration name="ДекорацияКартинка" id="155">
+					<Width>11</Width>
+					<Height>13</Height>
+					<PictureSize>Proportionally</PictureSize>
+					<Picture>
+						<xr:Abs>Picture.png</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="ДекорацияКартинкаКонтекстноеМеню" id="156"/>
+					<ExtendedTooltip name="ДекорацияКартинкаРасширеннаяПодсказка" id="303"/>
+				</PictureDecoration>
+				<Pages name="ГруппаСтраниц" id="49">
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа страниц</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>78</Width>
+					<Height>13</Height>
+					<PagesRepresentation>None</PagesRepresentation>
+					<ExtendedTooltip name="ГруппаСтраницРасширеннаяПодсказка" id="304"/>
+					<ChildItems>
+						<Page name="ОсновнаяСтраница" id="51">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Основная страница</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ОсновнаяСтраницаРасширеннаяПодсказка" id="305"/>
+							<ChildItems>
+								<Pages name="ГруппаЗаголовок" id="126">
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа заголовок</v8:content>
+										</v8:item>
+									</ToolTip>
+									<PagesRepresentation>None</PagesRepresentation>
+									<ExtendedTooltip name="ГруппаЗаголовокРасширеннаяПодсказка" id="306"/>
+									<ChildItems>
+										<Page name="ГруппаЗаголовокНовый" id="128">
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа заголовок новый</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="ГруппаЗаголовокНовыйРасширеннаяПодсказка" id="307"/>
+											<ChildItems>
+												<LabelDecoration name="ДекорацияВопрос" id="1">
+													<Height>3</Height>
+													<HorizontalStretch>true</HorizontalStretch>
+													<Font ref="sys:DefaultGUIFont" height="12" kind="WindowsFont"/>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Доступен переход на прикладное решение 
+1С:Управление торговлей, ред. 11 (базовая) с интерфейсом "Такси".</v8:content>
+														</v8:item>
+													</Title>
+													<HorizontalAlign>Center</HorizontalAlign>
+													<ContextMenu name="ДекорацияВопросКонтекстноеМеню" id="2"/>
+													<ExtendedTooltip name="ДекорацияВопросРасширеннаяПодсказка" id="308"/>
+												</LabelDecoration>
+												<LabelDecoration name="ДекорацияОтступ4" id="243">
+													<ContextMenu name="ДекорацияОтступ4КонтекстноеМеню" id="244"/>
+													<ExtendedTooltip name="ДекорацияОтступ4РасширеннаяПодсказка" id="309"/>
+												</LabelDecoration>
+												<UsualGroup name="ГруппаПодробнее" id="80">
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа подробнее</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаПодробнееРасширеннаяПодсказка" id="310"/>
+													<ChildItems>
+														<LabelDecoration name="ДекорацияОписание" id="85">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Функциональность решения объединяет практику использования предыдущих редакций конфигурации и 
+наиболее востребованные возможности программного продукта 1С:Управление торговлей, ред. 11 ПРОФ.</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ДекорацияОписаниеКонтекстноеМеню" id="86"/>
+															<ExtendedTooltip name="ДекорацияОписаниеРасширеннаяПодсказка" id="311"/>
+														</LabelDecoration>
+														<LabelDecoration name="ДекорацияПодробней" id="32">
+															<Height>1</Height>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Подробнее о возможностях</v8:content>
+																</v8:item>
+															</Title>
+															<Hyperlink>true</Hyperlink>
+															<VerticalAlign>Bottom</VerticalAlign>
+															<ContextMenu name="ДекорацияПодробнейКонтекстноеМеню" id="33"/>
+															<ExtendedTooltip name="ДекорацияПодробнейРасширеннаяПодсказка" id="312"/>
+															<Events>
+																<Event name="Click">ДекорацияПодробнейНажатие</Event>
+															</Events>
+														</LabelDecoration>
+														<LabelDecoration name="ДекорацияИнструкцияПоПереходу" id="300">
+															<Height>1</Height>
+															<HorizontalStretch>true</HorizontalStretch>
+															<TextColor>style:ЦветГиперссылкиГИСМ</TextColor>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Инструкция по переносу данных в 1С:Управление торговлей 11</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Повторно помощник 
+можно открыть 
+из меню "Сервис".</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Hyperlink>true</Hyperlink>
+															<VerticalAlign>Top</VerticalAlign>
+															<ContextMenu name="ДекорацияИнструкцияПоПереходуКонтекстноеМеню" id="301"/>
+															<ExtendedTooltip name="ДекорацияИнструкцияПоПереходуРасширеннаяПодсказка" id="313"/>
+															<Events>
+																<Event name="Click">ДекорацияИнструкцияПоПереходуНажатие</Event>
+															</Events>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+												<LabelDecoration name="ДекорацияОтступ3" id="160">
+													<Visible>false</Visible>
+													<ContextMenu name="ДекорацияОтступ3КонтекстноеМеню" id="161"/>
+													<ExtendedTooltip name="ДекорацияОтступ3РасширеннаяПодсказка" id="314"/>
+												</LabelDecoration>
+											</ChildItems>
+										</Page>
+										<Page name="ГруппаЗаголовокПовторно" id="130">
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа заголовок повторно</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="ГруппаЗаголовокПовторноРасширеннаяПодсказка" id="315"/>
+											<ChildItems>
+												<LabelDecoration name="ДекорацияПовторно" id="132">
+													<Height>3</Height>
+													<HorizontalStretch>true</HorizontalStretch>
+													<Font ref="sys:DefaultGUIFont" height="12" kind="WindowsFont"/>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Прикладное решение 1С:Управление торговлей, ред. 11 (базовая) 
+уже установлено на Ваш компьютер.</v8:content>
+														</v8:item>
+													</Title>
+													<HorizontalAlign>Center</HorizontalAlign>
+													<ContextMenu name="ДекорацияПовторноКонтекстноеМеню" id="133"/>
+													<ExtendedTooltip name="ДекорацияПовторноРасширеннаяПодсказка" id="316"/>
+												</LabelDecoration>
+												<LabelDecoration name="ДекорацияОтступ5" id="260">
+													<ContextMenu name="ДекорацияОтступ5КонтекстноеМеню" id="261"/>
+													<ExtendedTooltip name="ДекорацияОтступ5РасширеннаяПодсказка" id="317"/>
+												</LabelDecoration>
+												<UsualGroup name="ГруппаПодробнее1" id="246">
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа подробнее</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Horizontal</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаПодробнее1РасширеннаяПодсказка" id="318"/>
+													<ChildItems>
+														<LabelDecoration name="ДекорацияПодробней1" id="251">
+															<Height>1</Height>
+															<HorizontalStretch>true</HorizontalStretch>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Информация о продукте</v8:content>
+																</v8:item>
+															</Title>
+															<Hyperlink>true</Hyperlink>
+															<VerticalAlign>Bottom</VerticalAlign>
+															<ContextMenu name="ДекорацияПодробней1КонтекстноеМеню" id="252"/>
+															<ExtendedTooltip name="ДекорацияПодробней1РасширеннаяПодсказка" id="319"/>
+															<Events>
+																<Event name="Click">ДекорацияПодробнейНажатие</Event>
+															</Events>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+												<LabelDecoration name="ДекорацияОтступ6" id="263">
+													<Height>1</Height>
+													<ContextMenu name="ДекорацияОтступ6КонтекстноеМеню" id="264"/>
+													<ExtendedTooltip name="ДекорацияОтступ6РасширеннаяПодсказка" id="320"/>
+												</LabelDecoration>
+												<UsualGroup name="ГруппаПовторно" id="139">
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа повторно</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Horizontal</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаПовторноРасширеннаяПодсказка" id="321"/>
+													<ChildItems>
+														<LabelDecoration name="Декорация6" id="257">
+															<HorizontalStretch>true</HorizontalStretch>
+															<ContextMenu name="Декорация6КонтекстноеМеню" id="258"/>
+															<ExtendedTooltip name="Декорация6РасширеннаяПодсказка" id="322"/>
+														</LabelDecoration>
+														<Button name="ПерейтиНаУТ12" id="144">
+															<Type>UsualButton</Type>
+															<Width>21</Width>
+															<Height>2</Height>
+															<CommandName>Form.Command.ПерейтиНаУТ11</CommandName>
+															<TextColor>web:ForestGreen</TextColor>
+															<Font ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Создать новую базу ред. 11</v8:content>
+																</v8:item>
+															</Title>
+															<ExtendedTooltip name="ПерейтиНаУТ12РасширеннаяПодсказка" id="323"/>
+														</Button>
+														<Button name="Закрыть2" id="150">
+															<Type>UsualButton</Type>
+															<Width>21</Width>
+															<Height>2</Height>
+															<CommandName>Form.StandardCommand.Close</CommandName>
+															<Font ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Продолжить работу в базе ред. 10.3</v8:content>
+																</v8:item>
+															</Title>
+															<ExtendedTooltip name="Закрыть2РасширеннаяПодсказка" id="324"/>
+														</Button>
+														<Button name="Позже1" id="146">
+															<Type>UsualButton</Type>
+															<Width>21</Width>
+															<Height>2</Height>
+															<CommandName>Form.Command.НапомнитьПозже</CommandName>
+															<Font ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+															<ExtendedTooltip name="Позже1РасширеннаяПодсказка" id="325"/>
+														</Button>
+														<LabelDecoration name="Декорация5" id="254">
+															<HorizontalStretch>true</HorizontalStretch>
+															<ContextMenu name="Декорация5КонтекстноеМеню" id="255"/>
+															<ExtendedTooltip name="Декорация5РасширеннаяПодсказка" id="326"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</Page>
+									</ChildItems>
+								</Pages>
+								<LabelField name="КаталогИБ" id="22">
+									<DataPath>КаталогИБ</DataPath>
+									<Visible>false</Visible>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Hiperlink>true</Hiperlink>
+									<ContextMenu name="КаталогИБКонтекстноеМеню" id="23"/>
+									<ExtendedTooltip name="КаталогИБРасширеннаяПодсказка" id="327"/>
+									<Events>
+										<Event name="Click">КаталогИБНажатие</Event>
+									</Events>
+								</LabelField>
+								<LabelDecoration name="ДекорацияВажно3" id="221">
+									<Width>7</Width>
+									<TextColor>style:SpecialTextColor</TextColor>
+									<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Важно! 
+</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияВажно3КонтекстноеМеню" id="222"/>
+									<ExtendedTooltip name="ДекорацияВажно3РасширеннаяПодсказка" id="328"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияВажно4" id="224">
+									<HorizontalStretch>true</HorizontalStretch>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сохраняется возможность работы с информационной базой редакции 10.3.
+При создании новой базы редакции 11 все внесенные в 10.3 данные будут автоматически продублированы.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ДекорацияВажно4КонтекстноеМеню" id="225"/>
+									<ExtendedTooltip name="ДекорацияВажно4РасширеннаяПодсказка" id="329"/>
+								</LabelDecoration>
+								<UsualGroup name="ГруппаНовый" id="137">
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа новый</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаНовыйРасширеннаяПодсказка" id="330"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация3" id="237">
+											<Visible>false</Visible>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="Декорация3КонтекстноеМеню" id="238"/>
+											<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="331"/>
+										</LabelDecoration>
+										<Button name="ПерейтиНаУТ11" id="4">
+											<Type>UsualButton</Type>
+											<Visible>false</Visible>
+											<Width>21</Width>
+											<Height>2</Height>
+											<CommandName>Form.Command.ПерейтиНаУТ11</CommandName>
+											<TextColor>web:ForestGreen</TextColor>
+											<Font ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+											<ExtendedTooltip name="ПерейтиНаУТ11РасширеннаяПодсказка" id="332"/>
+										</Button>
+										<Button name="Позже" id="74">
+											<Type>UsualButton</Type>
+											<Width>21</Width>
+											<Height>2</Height>
+											<CommandName>Form.Command.НапомнитьПозже</CommandName>
+											<Font ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+											<ExtendedTooltip name="ПозжеРасширеннаяПодсказка" id="333"/>
+										</Button>
+										<LabelDecoration name="Декорация4" id="240">
+											<Visible>false</Visible>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="Декорация4КонтекстноеМеню" id="241"/>
+											<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="334"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<LabelDecoration name="ДекорацияПодсказка" id="152">
+									<Height>1</Height>
+									<HorizontalStretch>true</HorizontalStretch>
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Помощник перехода всегда можно вызвать из меню "Сервис".</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Повторно помощник 
+можно открыть 
+из меню "Сервис".</v8:content>
+										</v8:item>
+									</ToolTip>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ДекорацияПодсказкаКонтекстноеМеню" id="153"/>
+									<ExtendedTooltip name="ДекорацияПодсказкаРасширеннаяПодсказка" id="335"/>
+								</LabelDecoration>
+							</ChildItems>
+						</Page>
+						<Page name="СтраницаСтатус" id="53">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страница статус</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<ExtendedTooltip name="СтраницаСтатусРасширеннаяПодсказка" id="336"/>
+							<ChildItems>
+								<PictureDecoration name="ДекорацияДлительнаяОперация" id="99">
+									<Visible>false</Visible>
+									<Width>4</Width>
+									<Height>3</Height>
+									<Picture>
+										<xr:Ref>CommonPicture.СинхронизацияДанныхДлительнаяОперация</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="ДекорацияДлительнаяОперацияКонтекстноеМеню" id="100"/>
+									<ExtendedTooltip name="ДекорацияДлительнаяОперацияРасширеннаяПодсказка" id="337"/>
+								</PictureDecoration>
+								<UsualGroup name="ГруппаСостояние" id="105">
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа состояние</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаСостояниеРасширеннаяПодсказка" id="338"/>
+									<ChildItems>
+										<Pages name="ГруппаСтраницСостояний" id="107">
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа страниц состояний</v8:content>
+												</v8:item>
+											</ToolTip>
+											<PagesRepresentation>None</PagesRepresentation>
+											<ExtendedTooltip name="ГруппаСтраницСостоянийРасширеннаяПодсказка" id="339"/>
+											<ChildItems>
+												<Page name="ГруппаЗагрузкаССервера" id="109">
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа загрузка с сервера</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Horizontal</Group>
+													<ExtendedTooltip name="ГруппаЗагрузкаССервераРасширеннаяПодсказка" id="340"/>
+													<ChildItems>
+														<PictureDecoration name="ДекорацияГалка2" id="280">
+															<Width>2</Width>
+															<Height>2</Height>
+															<FileDragMode>AsFile</FileDragMode>
+															<ContextMenu name="ДекорацияГалка2КонтекстноеМеню" id="281"/>
+															<ExtendedTooltip name="ДекорацияГалка2РасширеннаяПодсказка" id="341"/>
+														</PictureDecoration>
+														<LabelDecoration name="ДекорацияСостояниеЗагрузкаССервера" id="57">
+															<Height>3</Height>
+															<HorizontalStretch>true</HorizontalStretch>
+															<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Выполняется загрузка файлов обновления с сервера 1С
+             Пожалуйста, подождите...</v8:content>
+																</v8:item>
+															</Title>
+															<VerticalAlign>Center</VerticalAlign>
+															<ContextMenu name="ДекорацияСостояниеЗагрузкаССервераКонтекстноеМеню" id="58"/>
+															<ExtendedTooltip name="ДекорацияСостояниеЗагрузкаССервераРасширеннаяПодсказка" id="342"/>
+														</LabelDecoration>
+													</ChildItems>
+												</Page>
+												<Page name="ГруппаВыгрузка" id="111">
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа выгрузка</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Horizontal</Group>
+													<ExtendedTooltip name="ГруппаВыгрузкаРасширеннаяПодсказка" id="343"/>
+													<ChildItems>
+														<PictureDecoration name="ДекорацияГалка1" id="274">
+															<Width>2</Width>
+															<Height>2</Height>
+															<Picture>
+																<xr:Ref>CommonPicture.СинхронизацияДанныхДанныеПолучены</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<FileDragMode>AsFile</FileDragMode>
+															<ContextMenu name="ДекорацияГалка1КонтекстноеМеню" id="275"/>
+															<ExtendedTooltip name="ДекорацияГалка1РасширеннаяПодсказка" id="344"/>
+														</PictureDecoration>
+														<UsualGroup name="Группа1" id="279">
+															<Group>Vertical</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="345"/>
+															<ChildItems>
+																<LabelDecoration name="ДекорацияСостояниеВыгрузкаВыполнено" id="277">
+																	<Height>2</Height>
+																	<HorizontalStretch>true</HorizontalStretch>
+																	<TextColor>#00AA00</TextColor>
+																	<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Выполнена загрузка файлов обновления с сервера 1С</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="ДекорацияСостояниеВыгрузкаВыполненоКонтекстноеМеню" id="278"/>
+																	<ExtendedTooltip name="ДекорацияСостояниеВыгрузкаВыполненоРасширеннаяПодсказка" id="346"/>
+																</LabelDecoration>
+																<LabelDecoration name="ДекорацияСостояниеВыгрузка" id="113">
+																	<HorizontalStretch>true</HorizontalStretch>
+																	<VerticalStretch>true</VerticalStretch>
+																	<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Выполняется выгрузка данных для редакции 11
+             Пожалуйста, подождите...</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="ДекорацияСостояниеВыгрузкаКонтекстноеМеню" id="114"/>
+																	<ExtendedTooltip name="ДекорацияСостояниеВыгрузкаРасширеннаяПодсказка" id="347"/>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+													</ChildItems>
+												</Page>
+												<Page name="ГруппаСоздание" id="116">
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа создание</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Horizontal</Group>
+													<ExtendedTooltip name="ГруппаСозданиеРасширеннаяПодсказка" id="348"/>
+													<ChildItems>
+														<UsualGroup name="Группа3" id="289">
+															<Group>Vertical</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="349"/>
+															<ChildItems>
+																<PictureDecoration name="ДекорацияГалка3" id="282">
+																	<Width>2</Width>
+																	<Height>2</Height>
+																	<Picture>
+																		<xr:Ref>CommonPicture.СинхронизацияДанныхДанныеПолучены</xr:Ref>
+																		<xr:LoadTransparent>false</xr:LoadTransparent>
+																	</Picture>
+																	<FileDragMode>AsFile</FileDragMode>
+																	<ContextMenu name="ДекорацияГалка3КонтекстноеМеню" id="283"/>
+																	<ExtendedTooltip name="ДекорацияГалка3РасширеннаяПодсказка" id="350"/>
+																</PictureDecoration>
+																<PictureDecoration name="ДекорацияГалка4" id="287">
+																	<Width>2</Width>
+																	<Height>1</Height>
+																	<Picture>
+																		<xr:Ref>CommonPicture.СинхронизацияДанныхДанныеПолучены</xr:Ref>
+																		<xr:LoadTransparent>false</xr:LoadTransparent>
+																	</Picture>
+																	<FileDragMode>AsFile</FileDragMode>
+																	<ContextMenu name="ДекорацияГалка4КонтекстноеМеню" id="288"/>
+																	<ExtendedTooltip name="ДекорацияГалка4РасширеннаяПодсказка" id="351"/>
+																</PictureDecoration>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="Группа2" id="286">
+															<Group>Vertical</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="352"/>
+															<ChildItems>
+																<LabelDecoration name="ДекорацияСостояниеСозданиеБазыВыполнено" id="284">
+																	<Height>4</Height>
+																	<HorizontalStretch>true</HorizontalStretch>
+																	<TextColor>#00AA00</TextColor>
+																	<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Выполнена загрузка файлов обновления с сервера 1С
+                                                                                                                                                                                                                         Выполнена выгрузка данных для редакции 11</v8:content>
+																		</v8:item>
+																	</Title>
+																	<VerticalAlign>Center</VerticalAlign>
+																	<ContextMenu name="ДекорацияСостояниеСозданиеБазыВыполненоКонтекстноеМеню" id="285"/>
+																	<ExtendedTooltip name="ДекорацияСостояниеСозданиеБазыВыполненоРасширеннаяПодсказка" id="353"/>
+																</LabelDecoration>
+																<LabelDecoration name="ДекорацияСостояниеСозданиеБазы" id="118">
+																	<Height>3</Height>
+																	<HorizontalStretch>true</HorizontalStretch>
+																	<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Выполняется создание базы редакции 11
+             Пожалуйста, подождите...</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="ДекорацияСостояниеСозданиеБазыКонтекстноеМеню" id="119"/>
+																	<ExtendedTooltip name="ДекорацияСостояниеСозданиеБазыРасширеннаяПодсказка" id="354"/>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+													</ChildItems>
+												</Page>
+												<Page name="ГруппаЗапуск" id="121">
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа создание</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Horizontal</Group>
+													<ExtendedTooltip name="ГруппаЗапускРасширеннаяПодсказка" id="355"/>
+													<ChildItems>
+														<UsualGroup name="Группа4" id="290">
+															<Group>Vertical</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="356"/>
+															<ChildItems>
+																<PictureDecoration name="ДекорацияГалка5" id="291">
+																	<Width>2</Width>
+																	<Height>2</Height>
+																	<Picture>
+																		<xr:Ref>CommonPicture.СинхронизацияДанныхДанныеПолучены</xr:Ref>
+																		<xr:LoadTransparent>false</xr:LoadTransparent>
+																	</Picture>
+																	<FileDragMode>AsFile</FileDragMode>
+																	<ContextMenu name="ДекорацияГалка5КонтекстноеМеню" id="292"/>
+																	<ExtendedTooltip name="ДекорацияГалка5РасширеннаяПодсказка" id="357"/>
+																</PictureDecoration>
+																<PictureDecoration name="ДекорацияГалка6" id="293">
+																	<Width>2</Width>
+																	<Height>1</Height>
+																	<Picture>
+																		<xr:Ref>CommonPicture.СинхронизацияДанныхДанныеПолучены</xr:Ref>
+																		<xr:LoadTransparent>false</xr:LoadTransparent>
+																	</Picture>
+																	<FileDragMode>AsFile</FileDragMode>
+																	<ContextMenu name="ДекорацияГалка6КонтекстноеМеню" id="294"/>
+																	<ExtendedTooltip name="ДекорацияГалка6РасширеннаяПодсказка" id="358"/>
+																</PictureDecoration>
+																<PictureDecoration name="ДекорацияГалка7" id="295">
+																	<Width>2</Width>
+																	<Height>2</Height>
+																	<Picture>
+																		<xr:Ref>CommonPicture.СинхронизацияДанныхДанныеПолучены</xr:Ref>
+																		<xr:LoadTransparent>false</xr:LoadTransparent>
+																	</Picture>
+																	<FileDragMode>AsFile</FileDragMode>
+																	<ContextMenu name="ДекорацияГалка7КонтекстноеМеню" id="296"/>
+																	<ExtendedTooltip name="ДекорацияГалка7РасширеннаяПодсказка" id="359"/>
+																</PictureDecoration>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="Группа5" id="297">
+															<Group>Vertical</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="360"/>
+															<ChildItems>
+																<LabelDecoration name="ДекорацияСостояниеЗапускБазыВыполнено" id="298">
+																	<HorizontalStretch>true</HorizontalStretch>
+																	<TextColor>#00AA00</TextColor>
+																	<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Выполнена загрузка файлов обновления с сервера 1С
+
+Выполнена выгрузка данных для редакции 11
+
+Выполнено создание базы редакции 11</v8:content>
+																		</v8:item>
+																	</Title>
+																	<VerticalAlign>Center</VerticalAlign>
+																	<ContextMenu name="ДекорацияСостояниеЗапускБазыВыполненоКонтекстноеМеню" id="299"/>
+																	<ExtendedTooltip name="ДекорацияСостояниеЗапускБазыВыполненоРасширеннаяПодсказка" id="361"/>
+																</LabelDecoration>
+																<LabelDecoration name="ДекорацияСостояниеЗапускБазы" id="123">
+																	<Height>3</Height>
+																	<HorizontalStretch>true</HorizontalStretch>
+																	<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Выполняется запуск базы редакции 11
+             Пожалуйста, подождите...</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="ДекорацияСостояниеЗапускБазыКонтекстноеМеню" id="124"/>
+																	<ExtendedTooltip name="ДекорацияСостояниеЗапускБазыРасширеннаяПодсказка" id="362"/>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+													</ChildItems>
+												</Page>
+											</ChildItems>
+										</Pages>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</Page>
+						<Page name="СтраницаЗавершение" id="55">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страница завершение</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="СтраницаЗавершениеРасширеннаяПодсказка" id="363"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаДекорация" id="94">
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа декорация</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаДекорацияРасширеннаяПодсказка" id="364"/>
+									<ChildItems>
+										<PictureDecoration name="ДекорацияГалка" id="91">
+											<Width>4</Width>
+											<Height>4</Height>
+											<Picture>
+												<xr:Ref>CommonPicture.ВыполненоУспешно32</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="ДекорацияГалкаКонтекстноеМеню" id="92"/>
+											<ExtendedTooltip name="ДекорацияГалкаРасширеннаяПодсказка" id="365"/>
+										</PictureDecoration>
+										<LabelDecoration name="ДекорацияЗавершение" id="88">
+											<Height>4</Height>
+											<TextColor>#00AA00</TextColor>
+											<Font ref="sys:DefaultGUIFont" height="12" kind="WindowsFont"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Информационная база конфигурации 1С:Управление торговлей, ред. 11 (базовая) будет готова к работе после загрузки данных.</v8:content>
+												</v8:item>
+											</Title>
+											<VerticalAlign>Center</VerticalAlign>
+											<ContextMenu name="ДекорацияЗавершениеКонтекстноеМеню" id="89"/>
+											<ExtendedTooltip name="ДекорацияЗавершениеРасширеннаяПодсказка" id="366"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<LabelDecoration name="Декорация2" id="234">
+									<VerticalStretch>true</VerticalStretch>
+									<ContextMenu name="Декорация2КонтекстноеМеню" id="235"/>
+									<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="367"/>
+								</LabelDecoration>
+								<UsualGroup name="ГруппаЗакрыть" id="229">
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа закрыть</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаЗакрытьРасширеннаяПодсказка" id="368"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация1" id="231">
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="Декорация1КонтекстноеМеню" id="232"/>
+											<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="369"/>
+										</LabelDecoration>
+										<Button name="Закрыть" id="227">
+											<Type>UsualButton</Type>
+											<CommandName>Form.StandardCommand.Close</CommandName>
+											<ExtendedTooltip name="ЗакрытьРасширеннаяПодсказка" id="370"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</Page>
+						<Page name="СтраницаПерезапуска" id="175">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страница перезапуска</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="СтраницаПерезапускаРасширеннаяПодсказка" id="371"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияЗаголовокПерезапуск1" id="190">
+									<Height>2</Height>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Font ref="sys:DefaultGUIFont" height="12" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Шаг 1. Обновите версию платформы 1С:Предприятие 8.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияЗаголовокПерезапуск1КонтекстноеМеню" id="191"/>
+									<ExtendedTooltip name="ДекорацияЗаголовокПерезапуск1РасширеннаяПодсказка" id="372"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияИнструкция" id="187">
+									<HorizontalStretch>true</HorizontalStretch>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Инструкция по обновлению на новую версию 1С:Предприятия 8.
+</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ДекорацияИнструкцияКонтекстноеМеню" id="188"/>
+									<ExtendedTooltip name="ДекорацияИнструкцияРасширеннаяПодсказка" id="373"/>
+									<Events>
+										<Event name="Click">ДекорацияИнструкцияНажатие</Event>
+									</Events>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияЗаголовокПерезапуск2" id="182">
+									<Height>2</Height>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Font ref="sys:DefaultGUIFont" height="12" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Шаг 2. Создайте базу редакции 11.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияЗаголовокПерезапуск2КонтекстноеМеню" id="183"/>
+									<ExtendedTooltip name="ДекорацияЗаголовокПерезапуск2РасширеннаяПодсказка" id="374"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияЗаголовокПерезапуск4" id="200">
+									<Height>2</Height>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>По нажатию кнопки "Создать базу ред.11" будет создана информационная база конфигурации 1С:Управление торговлей, ред. 11 (базовая), в которую будут загружены данные из существующей базы редакции 10.3.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ДекорацияЗаголовокПерезапуск4КонтекстноеМеню" id="201"/>
+									<ExtendedTooltip name="ДекорацияЗаголовокПерезапуск4РасширеннаяПодсказка" id="375"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияОтступ1" id="209">
+									<Height>1</Height>
+									<ContextMenu name="ДекорацияОтступ1КонтекстноеМеню" id="210"/>
+									<ExtendedTooltip name="ДекорацияОтступ1РасширеннаяПодсказка" id="376"/>
+								</LabelDecoration>
+								<UsualGroup name="ГруппаКомандПерезапуск" id="198">
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа команд перезапуск</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаКомандПерезапускРасширеннаяПодсказка" id="377"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация8" id="269">
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="Декорация8КонтекстноеМеню" id="270"/>
+											<ExtendedTooltip name="Декорация8РасширеннаяПодсказка" id="378"/>
+										</LabelDecoration>
+										<Button name="ПерейтиНаУТ13" id="196">
+											<Type>UsualButton</Type>
+											<Width>21</Width>
+											<Height>2</Height>
+											<CommandName>Form.Command.ПерезапуститьУТ103</CommandName>
+											<TextColor>web:ForestGreen</TextColor>
+											<Font ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+											<ExtendedTooltip name="ПерейтиНаУТ13РасширеннаяПодсказка" id="379"/>
+										</Button>
+										<Button name="Позже2" id="177">
+											<Type>UsualButton</Type>
+											<Width>21</Width>
+											<Height>2</Height>
+											<CommandName>Form.Command.НапомнитьПозже</CommandName>
+											<Font ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+											<ExtendedTooltip name="Позже2РасширеннаяПодсказка" id="380"/>
+										</Button>
+										<LabelDecoration name="Декорация7" id="266">
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="Декорация7КонтекстноеМеню" id="267"/>
+											<ExtendedTooltip name="Декорация7РасширеннаяПодсказка" id="381"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<LabelDecoration name="ДекорацияПодсказка1" id="215">
+									<HorizontalStretch>true</HorizontalStretch>
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Помощник перехода всегда можно вызвать из меню "Сервис".</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Повторно помощник 
+можно открыть 
+из меню "Сервис".</v8:content>
+										</v8:item>
+									</ToolTip>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ДекорацияПодсказка1КонтекстноеМеню" id="216"/>
+									<ExtendedTooltip name="ДекорацияПодсказка1РасширеннаяПодсказка" id="382"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияОтступ2" id="272">
+									<Height>1</Height>
+									<ContextMenu name="ДекорацияОтступ2КонтекстноеМеню" id="273"/>
+									<ExtendedTooltip name="ДекорацияОтступ2РасширеннаяПодсказка" id="383"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияВажно2" id="218">
+									<Width>7</Width>
+									<TextColor>style:SpecialTextColor</TextColor>
+									<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Важно! 
+</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<ContextMenu name="ДекорацияВажно2КонтекстноеМеню" id="219"/>
+									<ExtendedTooltip name="ДекорацияВажно2РасширеннаяПодсказка" id="384"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияВажно1" id="212">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сохраняется возможность работы с информационной базой редакции 10.3.
+При создании новой базы редакции 11 все внесенные в 10.3 данные будут автоматически продублированы.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ДекорацияВажно1КонтекстноеМеню" id="213"/>
+									<ExtendedTooltip name="ДекорацияВажно1РасширеннаяПодсказка" id="385"/>
+								</LabelDecoration>
+							</ChildItems>
+						</Page>
+					</ChildItems>
+				</Pages>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ПомощникПереходаНаУТ11</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="КаталогИБ" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Каталог создания новой базы редакции 11</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КаталогФайлаДанных" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Каталог файла данных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмяКаталогаБазы" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя каталога базы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмяБазыВСписке" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя базы в списке</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВерсияПлатформыАктуальна" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Версия платформы актуальна</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПутьКОбработкеСПравилами" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь к обработке с правилами</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПутьКФайлуШаблона" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь к файлу шаблона</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПроксиСерверТребуетАутентификации" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прокси сервер требует аутентификации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПользовательПроксиСервера" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользователь прокси сервера</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПарольСервераОбновлений" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль сервера обновлений</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПарольПроксиСервера" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль прокси сервера</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КодПользователяСервераОбновлений" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код пользователя сервера обновлений</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПерейтиНаУТ11" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать базу ред. 11</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Попробовать ред. 11</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПерейтиНаУТ11</Action>
+		</Command>
+		<Command name="НапомнитьПозже" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Напомнить позже</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Напомнить позже</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЧерезНеделю</Action>
+		</Command>
+		<Command name="ПерезапуститьУТ103" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать базу ред. 11</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перезапустить ред. 10.3</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПерезапуститьУТ103</Action>
+		</Command>
+		<Command name="ПродолжитьРаботуВ103" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Продолжить работу в ред.10.3</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Продолжить работу в103</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПродолжитьРаботуВ103</Action>
+		</Command>
+	</Commands>
+</Form>

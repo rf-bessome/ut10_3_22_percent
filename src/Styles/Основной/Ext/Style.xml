@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Style xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Item name="FormBackColor">
+		<Color>web:Cream</Color>
+	</Item>
+	<Item name="FormTextColor">
+		<Color>style:FormTextColor</Color>
+	</Item>
+	<Item name="ButtonBackColor">
+		<Color>style:ButtonBackColor</Color>
+	</Item>
+	<Item name="ButtonTextColor">
+		<Color>style:ButtonTextColor</Color>
+	</Item>
+	<Item name="FieldBackColor">
+		<Color>style:FieldBackColor</Color>
+	</Item>
+	<Item name="FieldTextColor">
+		<Color>style:FieldTextColor</Color>
+	</Item>
+	<Item name="FieldSelectionBackColor">
+		<Color>style:FieldSelectionBackColor</Color>
+	</Item>
+	<Item name="FieldSelectedTextColor">
+		<Color>style:FieldSelectedTextColor</Color>
+	</Item>
+	<Item name="FieldAlternativeBackColor">
+		<Color>web:Cream</Color>
+	</Item>
+	<Item name="ToolTipBackColor">
+		<Color>style:ToolTipBackColor</Color>
+	</Item>
+	<Item name="ToolTipTextColor">
+		<Color>style:ToolTipTextColor</Color>
+	</Item>
+	<Item name="SpecialTextColor">
+		<Color>style:SpecialTextColor</Color>
+	</Item>
+	<Item name="NegativeTextColor">
+		<Color>style:NegativeTextColor</Color>
+	</Item>
+	<Item name="BorderColor">
+		<Color>style:BorderColor</Color>
+	</Item>
+	<Item name="ReportHeaderBackColor">
+		<Color>style:ReportHeaderBackColor</Color>
+	</Item>
+	<Item name="ReportGroup1BackColor">
+		<Color>style:ReportGroup1BackColor</Color>
+	</Item>
+	<Item name="ReportGroup2BackColor">
+		<Color>style:ReportGroup2BackColor</Color>
+	</Item>
+	<Item name="ReportLineColor">
+		<Color>style:ReportLineColor</Color>
+	</Item>
+	<Item name="ControlBorder">
+		<Border ref="style:ControlBorder"/>
+	</Item>
+	<Item name="TextFont">
+		<Font ref="style:TextFont" kind="StyleItem"/>
+	</Item>
+	<Item name="SmallTextFont">
+		<Font ref="style:SmallTextFont" kind="StyleItem"/>
+	</Item>
+	<Item name="NormalTextFont">
+		<Font ref="style:NormalTextFont" kind="StyleItem"/>
+	</Item>
+	<Item name="LargeTextFont">
+		<Font ref="style:LargeTextFont" kind="StyleItem"/>
+	</Item>
+	<Item name="ExtraLargeTextFont">
+		<Font ref="style:ExtraLargeTextFont" kind="StyleItem"/>
+	</Item>
+	<Item name="ButtonBorderColor">
+		<Color>style:ButtonBorderColor</Color>
+	</Item>
+	<Item name="TableHeaderBackColor">
+		<Color>style:TableHeaderBackColor</Color>
+	</Item>
+	<Item name="TableHeaderTextColor">
+		<Color>style:TableHeaderTextColor</Color>
+	</Item>
+	<Item name="TableFooterBackColor">
+		<Color>style:TableFooterBackColor</Color>
+	</Item>
+	<Item name="TableFooterTextColor">
+		<Color>style:TableFooterTextColor</Color>
+	</Item>
+	<Item name="StyleItem.БыстрыеОтборыФонГруппы">
+		<Color>style:FormBackColor</Color>
+	</Item>
+	<Item name="StyleItem.ВыборСтандартногоПериодаФонКнопки">
+		<Color>style:FormBackColor</Color>
+	</Item>
+	<Item name="StyleItem.ВысокийПриоритетДокумента">
+		<Color>style:FormBackColor</Color>
+	</Item>
+	<Item name="StyleItem.ГиперссылкаЦвет">
+		<Color>style:FieldSelectionBackColor</Color>
+	</Item>
+	<Item name="StyleItem.ДосьеРамкаСтрокиЦвет">
+		<Color>style:FormBackColor</Color>
+	</Item>
+	<Item name="StyleItem.ИтогиФон">
+		<Color>style:FormBackColor</Color>
+	</Item>
+	<Item name="StyleItem.ИтогиФонГруппы">
+		<Color>style:FormBackColor</Color>
+	</Item>
+	<Item name="StyleItem.НедоступныеДанныеЦвет">
+		<Color>web:LightGray</Color>
+	</Item>
+	<Item name="StyleItem.НепринятаяВерсия">
+		<Color>style:FormBackColor</Color>
+	</Item>
+	<Item name="StyleItem.ПользовательВыбранный">
+		<Color>web:Gainsboro</Color>
+	</Item>
+	<Item name="StyleItem.ПоясняющийОшибкуТекст">
+		<Color>style:SpecialTextColor</Color>
+	</Item>
+	<Item name="StyleItem.ПоясняющийТекст">
+		<Color>#1955AE</Color>
+	</Item>
+	<Item name="StyleItem.ПросроченныеДанныеЦвет">
+		<Color>#B22222</Color>
+	</Item>
+	<Item name="StyleItem.РезультатУспехЦвет">
+		<Color>web:LimeGreen</Color>
+	</Item>
+	<Item name="StyleItem.СтатусОбработкиОшибкаПередачиГосИС">
+		<Color>style:SpecialTextColor</Color>
+	</Item>
+	<Item name="StyleItem.СтатусОбработкиПередаетсяГосИС">
+		<Color>web:LightGray</Color>
+	</Item>
+	<Item name="StyleItem.ТекстВторостепеннойНадписи">
+		<Color>#646464</Color>
+	</Item>
+	<Item name="StyleItem.ТекстЗапрещеннойЯчейкиЦвет">
+		<Color>#C0C0C0</Color>
+	</Item>
+	<Item name="StyleItem.ТекстИнформационнойНадписи">
+		<Color>style:FieldSelectionBackColor</Color>
+	</Item>
+	<Item name="StyleItem.ТекстИнформационнойНадписиИС">
+		<Color>web:SteelBlue</Color>
+	</Item>
+	<Item name="StyleItem.ТекстПоясняющейНадписи">
+		<Color>style:ToolTipTextColor</Color>
+	</Item>
+	<Item name="StyleItem.ТекстПредупреждающейНадписи">
+		<Color>style:SpecialTextColor</Color>
+	</Item>
+	<Item name="StyleItem.ФайлЗанятыйДругимПользователем">
+		<Color>web:Gray</Color>
+	</Item>
+	<Item name="StyleItem.ФайлЗанятыйТекущимПользователем">
+		<Color>style:FormBackColor</Color>
+	</Item>
+	<Item name="StyleItem.ФонГруппировкиВерхнегоУровня">
+		<Color>style:FormBackColor</Color>
+	</Item>
+	<Item name="StyleItem.ФонГруппировкиПромежуточногоУровня">
+		<Color>web:Cream</Color>
+	</Item>
+	<Item name="StyleItem.ФонПомеченнойКнопкиЦвет">
+		<Color>style:FormBackColor</Color>
+	</Item>
+	<Item name="StyleItem.ФонУправляющегоПоля">
+		<Color>style:FormBackColor</Color>
+	</Item>
+	<Item name="StyleItem.ЦветГиперссылки">
+		<Color>#3366FF</Color>
+	</Item>
+	<Item name="StyleItem.ЦветГиперссылкиБЭД">
+		<Color>style:ЦветГиперссылкиБЭД</Color>
+	</Item>
+	<Item name="StyleItem.ЦветГиперссылкиГИСМ">
+		<Color>#1C55AE</Color>
+	</Item>
+	<Item name="StyleItem.ЦветГиперссылкиГосИС">
+		<Color>#1C55AE</Color>
+	</Item>
+	<Item name="StyleItem.ЦветНеактивнойНадписи">
+		<Color>style:FormBackColor</Color>
+	</Item>
+	<Item name="StyleItem.ЦветНедоступногоТекста">
+		<Color>#C0C0C0</Color>
+	</Item>
+	<Item name="StyleItem.ЦветОписанияСкладаКассыВДокументах">
+		<Color>style:FormBackColor</Color>
+	</Item>
+	<Item name="StyleItem.ЦветТекстаНеТребуетВниманияГИСМ">
+		<Color>#C0C0C0</Color>
+	</Item>
+	<Item name="StyleItem.ЦветТекстаНеТребуетВниманияГосИС">
+		<Color>#C0C0C0</Color>
+	</Item>
+	<Item name="StyleItem.ЦветТекстаОтложенаПриПроверкеГосИС">
+		<Color>web:Orange</Color>
+	</Item>
+	<Item name="StyleItem.ЦветТекстаПроблемаГосИС">
+		<Color>#FF0000</Color>
+	</Item>
+	<Item name="StyleItem.ЦветТекстаТребуетВниманияГИСМ">
+		<Color>#FF0000</Color>
+	</Item>
+	<Item name="StyleItem.ЦветТекстаТребуетВниманияГосИС">
+		<Color>#FF0000</Color>
+	</Item>
+	<Item name="StyleItem.ЦветУспешнойОперацииГосИС">
+		<Color>web:ForestGreen</Color>
+	</Item>
+	<Item name="StyleItem.ЦветФонаВыделения">
+		<Color>#FFE8B3</Color>
+	</Item>
+	<Item name="StyleItem.ЦветФонаНеТребуетВниманияГосИС">
+		<Color>#F2F2F2</Color>
+	</Item>
+	<Item name="StyleItem.ЦветФонаЧередованияСтрок">
+		<Color>#EFF4F9</Color>
+	</Item>
+	<Item name="StyleItem.ЦветФонаЧередованияСтрокТабличнойЧасти">
+		<Color>style:FormBackColor</Color>
+	</Item>
+	<Item name="StyleItem.ШрифтВажнойНадписи">
+		<Font ref="style:TextFont" height="9" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+	</Item>
+	<Item name="StyleItem.ШрифтЗаголовка">
+		<Font ref="style:TextFont" faceName="Verdana" height="14" kind="StyleItem"/>
+	</Item>
+	<Item name="StyleItem.ШрифтЗаголовкаТаблицы">
+		<Font ref="style:TextFont" kind="StyleItem"/>
+	</Item>
+	<Item name="StyleItem.ШрифтЗаголовкаФормы">
+		<Font ref="style:TextFont" kind="StyleItem"/>
+	</Item>
+</Style>

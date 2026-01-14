@@ -1,0 +1,2545 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Архив ЭДО</v8:content>
+		</v8:item>
+	</Title>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>None</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<CommandSet>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>Close</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="СтраницыАРМ" id="72">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы АРМ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы АРМ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыАРМРасширеннаяПодсказка" id="594"/>
+			<ChildItems>
+				<Page name="ЭД" id="111">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Входящие</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Архив исходящих электронных документов</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ЭДРасширеннаяПодсказка" id="595"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаБыстрыеОтборы" id="112">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Быстрые отборы</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Быстрые отборы</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаБыстрыеОтборыРасширеннаяПодсказка" id="596"/>
+							<ChildItems>
+								<InputField name="Ответственный" id="169">
+									<DataPath>Ответственный</DataPath>
+									<TitleLocation>Top</TitleLocation>
+									<ClearButton>true</ClearButton>
+									<OpenButton>false</OpenButton>
+									<QuickChoice>true</QuickChoice>
+									<ContextMenu name="ОтветственныйКонтекстноеМеню" id="170"/>
+									<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="597"/>
+									<Events>
+										<Event name="OnChange">ОтветственныйПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="ВидЭД" id="152">
+									<DataPath>ВидЭД</DataPath>
+									<TitleLocation>Top</TitleLocation>
+									<ClearButton>true</ClearButton>
+									<OpenButton>false</OpenButton>
+									<ListChoiceMode>true</ListChoiceMode>
+									<QuickChoice>true</QuickChoice>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ВидыЭД.EnumValue.КаталогТоваров</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ВидыЭД.EnumValue.ПрайсЛист</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ВидыЭД.EnumValue.ЗаказТовара</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ВидыЭД.EnumValue.ОтветНаЗаказ</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ВидыЭД.EnumValue.СчетНаОплату</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ВидыЭД.EnumValue.ТОРГ12</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ВидыЭД.EnumValue.ПроизвольныйЭД</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ВидыЭД.EnumValue.ОтчетОПродажахКомиссионногоТовара</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ВидыЭД.EnumValue.ОтчетОСписанииКомиссионногоТовара</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ВидыЭД.EnumValue.АктВыполненныхРабот</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ВидыЭД.EnumValue.ПередачаТоваровМеждуОрганизациями</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ВидыЭД.EnumValue.ВозвратТоваровМеждуОрганизациями</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ВидыЭД.EnumValue.АктНаПередачуПрав</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="ВидЭДКонтекстноеМеню" id="153"/>
+									<ExtendedTooltip name="ВидЭДРасширеннаяПодсказка" id="598"/>
+									<Events>
+										<Event name="OnChange">ВидЭДПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="СостояниеЭДО" id="160">
+									<DataPath>СостояниеЭДО</DataPath>
+									<TitleLocation>Top</TitleLocation>
+									<ClearButton>true</ClearButton>
+									<OpenButton>false</OpenButton>
+									<ListChoiceMode>true</ListChoiceMode>
+									<QuickChoice>true</QuickChoice>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияВерсийЭД.EnumValue.Аннулирован</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияВерсийЭД.EnumValue.ОбменЗавершен</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияВерсийЭД.EnumValue.ОбменЗавершенСИсправлением</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияВерсийЭД.EnumValue.ЗакрытПринудительно</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияВерсийЭД.EnumValue.Отклонен</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияВерсийЭД.EnumValue.НеСформирован</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияВерсийЭД.EnumValue.НеПолучен</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияВерсийЭД.EnumValue.ОжидаетсяАннулирование</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияВерсийЭД.EnumValue.ОжидаетсяИзвещениеОПолучении</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияВерсийЭД.EnumValue.ОжидаетсяКорректировка</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияВерсийЭД.EnumValue.ОжидаетсяОтправкаИзвещения</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияВерсийЭД.EnumValue.ОжидаетсяПередачаОператору</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияВерсийЭД.EnumValue.ОжидаетсяПодтверждение</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияВерсийЭД.EnumValue.ОжидаетсяПодтверждениеОператора</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияВерсийЭД.EnumValue.ОжидаетсяОтправкаПолучателю</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияВерсийЭД.EnumValue.ТребуетсяАннулировать</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияВерсийЭД.EnumValue.ОшибкаПередачи</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияВерсийЭД.EnumValue.ОжидаетсяОтправка</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияВерсийЭД.EnumValue.НаПодписи</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияВерсийЭД.EnumValue.ИзвещениеНаПодписи</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияВерсийЭД.EnumValue.НаУтверждении</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияВерсийЭД.EnumValue.ТребуетсяУточнитьДокумент</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="СостояниеЭДОКонтекстноеМеню" id="161"/>
+									<ExtendedTooltip name="СостояниеЭДОРасширеннаяПодсказка" id="599"/>
+									<Events>
+										<Event name="OnChange">СостояниеЭДОПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="Список" id="171">
+							<Representation>List</Representation>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Список</DataPath>
+							<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+							<CommandSet>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>Choose</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+								<ExcludedCommand>Create</ExcludedCommand>
+								<ExcludedCommand>Delete</ExcludedCommand>
+								<ExcludedCommand>SetDeletionMark</ExcludedCommand>
+							</CommandSet>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="СписокКонтекстноеМеню" id="172">
+								<ChildItems>
+									<Button name="СписокКонтекстноеМенюСправочникЭДПрисоединенныеФайлыСтруктураЭДО" id="421">
+										<Type>CommandBarButton</Type>
+										<CommandName>Catalog.ЭДПрисоединенныеФайлы.Command.СтруктураЭДО</CommandName>
+										<DataPath>Items.Список.CurrentData.Ref</DataPath>
+										<ExtendedTooltip name="СписокКонтекстноеМенюСправочникЭДПрисоединенныеФайлыСтруктураЭДОРасширеннаяПодсказка" id="600"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="СписокКоманднаяПанель" id="173">
+								<ChildItems>
+									<ButtonGroup name="СписокГруппаКнопок" id="239">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список группа кнопок</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список доступных действий</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="СписокГруппаКнопокРасширеннаяПодсказка" id="601"/>
+										<ChildItems>
+											<Button name="УстановитьОтветственного" id="223">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.УстановитьОтветственного</CommandName>
+												<ExtendedTooltip name="УстановитьОтветственногоРасширеннаяПодсказка" id="602"/>
+											</Button>
+											<Button name="СравнитьДанныеЭДВх" id="224">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.СравнитьДанныеЭДВх</CommandName>
+												<ExtendedTooltip name="СравнитьДанныеЭДВхРасширеннаяПодсказка" id="603"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<ButtonGroup name="СписокГруппаВыгрузить" id="416">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список группа выгрузить</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список группа выгрузить</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="СписокГруппаВыгрузитьРасширеннаяПодсказка" id="604"/>
+										<ChildItems>
+											<Button name="ФормаВходящиеВыгрузитьЭлектронныеДокументыДляФНС" id="417">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ВходящиеВыгрузитьЭлектронныеДокументыДляФНС</CommandName>
+												<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="ФормаВходящиеВыгрузитьЭлектронныеДокументыДляФНСРасширеннаяПодсказка" id="605"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<ButtonGroup name="ГруппаКомандыФормы" id="262">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Группа команды формы</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Группа команды формы</v8:content>
+											</v8:item>
+										</ToolTip>
+										<CommandSource>Form</CommandSource>
+										<ExtendedTooltip name="ГруппаКомандыФормыРасширеннаяПодсказка" id="606"/>
+									</ButtonGroup>
+									<Button name="СписокСправка" id="402">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.StandardCommand.Help</CommandName>
+										<ExtendedTooltip name="СписокСправкаРасширеннаяПодсказка" id="607"/>
+									</Button>
+									<Button name="СписокСправочникЭДПрисоединенныеФайлыСтруктураЭДО" id="420">
+										<Type>CommandBarButton</Type>
+										<CommandName>Catalog.ЭДПрисоединенныеФайлы.Command.СтруктураЭДО</CommandName>
+										<DataPath>Items.Список.CurrentData.Ref</DataPath>
+										<ExtendedTooltip name="СписокСправочникЭДПрисоединенныеФайлыСтруктураЭДОРасширеннаяПодсказка" id="608"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="609"/>
+							<SearchStringAddition name="СписокСтрокаПоиска" id="610">
+								<AdditionSource>
+									<Item>Список</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="611"/>
+								<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="612"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокСостояниеПросмотра" id="613">
+								<AdditionSource>
+									<Item>Список</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="614"/>
+								<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="615"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокУправлениеПоиском" id="616">
+								<AdditionSource>
+									<Item>Список</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="617"/>
+								<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="618"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">СписокВыбор</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="СписокВидЭД" id="178">
+									<DataPath>Список.ВидЭД</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Вид документа</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СписокВидЭДКонтекстноеМеню" id="179"/>
+									<ExtendedTooltip name="СписокВидЭДРасширеннаяПодсказка" id="619"/>
+								</LabelField>
+								<LabelField name="СписокНомерДокумента" id="233">
+									<DataPath>Список.НомерДокумента</DataPath>
+									<Width>20</Width>
+									<ContextMenu name="СписокНомерДокументаКонтекстноеМеню" id="234"/>
+									<ExtendedTooltip name="СписокНомерДокументаРасширеннаяПодсказка" id="620"/>
+								</LabelField>
+								<LabelField name="СписокДатаДокумента" id="235">
+									<DataPath>Список.ДатаДокумента</DataPath>
+									<Width>8</Width>
+									<ContextMenu name="СписокДатаДокументаКонтекстноеМеню" id="236"/>
+									<ExtendedTooltip name="СписокДатаДокументаРасширеннаяПодсказка" id="621"/>
+								</LabelField>
+								<LabelField name="СписокКонтрагент" id="229">
+									<DataPath>Список.Контрагент</DataPath>
+									<ContextMenu name="СписокКонтрагентКонтекстноеМеню" id="230"/>
+									<ExtendedTooltip name="СписокКонтрагентРасширеннаяПодсказка" id="622"/>
+								</LabelField>
+								<LabelField name="СписокОрганизация" id="237">
+									<DataPath>Список.Организация</DataPath>
+									<ContextMenu name="СписокОрганизацияКонтекстноеМеню" id="238"/>
+									<ExtendedTooltip name="СписокОрганизацияРасширеннаяПодсказка" id="623"/>
+								</LabelField>
+								<LabelField name="СписокДатаПолучения" id="227">
+									<DataPath>Список.ДатаПолучения</DataPath>
+									<Width>20</Width>
+									<ContextMenu name="СписокДатаПолученияКонтекстноеМеню" id="228"/>
+									<ExtendedTooltip name="СписокДатаПолученияРасширеннаяПодсказка" id="624"/>
+								</LabelField>
+								<InputField name="СписокСостояниеЭДО" id="583">
+									<DataPath>Список.СостояниеЭДО</DataPath>
+									<ContextMenu name="СписокСостояниеЭДОКонтекстноеМеню" id="584"/>
+									<ExtendedTooltip name="СписокСостояниеЭДОРасширеннаяПодсказка" id="625"/>
+								</InputField>
+								<InputField name="СписокДатаИзмененияСостоянияЭДО" id="586">
+									<DataPath>Список.ДатаИзмененияСостоянияЭДО</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дата последнего изменения</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СписокДатаИзмененияСостоянияЭДОКонтекстноеМеню" id="587"/>
+									<ExtendedTooltip name="СписокДатаИзмененияСостоянияЭДОРасширеннаяПодсказка" id="626"/>
+								</InputField>
+								<LabelField name="СписокОтветственный" id="188">
+									<DataPath>Список.Ответственный</DataPath>
+									<ContextMenu name="СписокОтветственныйКонтекстноеМеню" id="189"/>
+									<ExtendedTooltip name="СписокОтветственныйРасширеннаяПодсказка" id="627"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ИЭД" id="266">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исходящие</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Архив исходящих электронных документов</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ИЭДРасширеннаяПодсказка" id="628"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаБыстрыеОтборыИсх" id="267">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Быстрые отборы</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Быстрые отборы</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаБыстрыеОтборыИсхРасширеннаяПодсказка" id="629"/>
+							<ChildItems>
+								<InputField name="ОтветственныйИсх" id="268">
+									<DataPath>ОтветственныйИсх</DataPath>
+									<TitleLocation>Top</TitleLocation>
+									<ClearButton>true</ClearButton>
+									<OpenButton>false</OpenButton>
+									<QuickChoice>true</QuickChoice>
+									<ContextMenu name="ОтветственныйИсхКонтекстноеМеню" id="269"/>
+									<ExtendedTooltip name="ОтветственныйИсхРасширеннаяПодсказка" id="630"/>
+									<Events>
+										<Event name="OnChange">ОтветственныйИсхПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="ВидЭДИсх" id="270">
+									<DataPath>ВидЭДИсх</DataPath>
+									<TitleLocation>Top</TitleLocation>
+									<ClearButton>true</ClearButton>
+									<OpenButton>false</OpenButton>
+									<ListChoiceMode>true</ListChoiceMode>
+									<QuickChoice>true</QuickChoice>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ВидыЭД.EnumValue.КаталогТоваров</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ВидыЭД.EnumValue.ПрайсЛист</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ВидыЭД.EnumValue.ЗаказТовара</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ВидыЭД.EnumValue.ОтветНаЗаказ</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ВидыЭД.EnumValue.СчетНаОплату</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ВидыЭД.EnumValue.ТОРГ12</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ВидыЭД.EnumValue.ПроизвольныйЭД</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ВидыЭД.EnumValue.ОтчетОПродажахКомиссионногоТовара</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ВидыЭД.EnumValue.ОтчетОСписанииКомиссионногоТовара</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ВидыЭД.EnumValue.АктВыполненныхРабот</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ВидыЭД.EnumValue.ПередачаТоваровМеждуОрганизациями</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ВидыЭД.EnumValue.ВозвратТоваровМеждуОрганизациями</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ВидыЭД.EnumValue.АктНаПередачуПрав</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="ВидЭДИсхКонтекстноеМеню" id="271"/>
+									<ExtendedTooltip name="ВидЭДИсхРасширеннаяПодсказка" id="631"/>
+									<Events>
+										<Event name="OnChange">ВидЭДИсхПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="СостояниеЭДОИсх" id="272">
+									<DataPath>СостояниеЭДОИсх</DataPath>
+									<TitleLocation>Top</TitleLocation>
+									<ClearButton>true</ClearButton>
+									<OpenButton>false</OpenButton>
+									<ListChoiceMode>true</ListChoiceMode>
+									<QuickChoice>true</QuickChoice>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияВерсийЭД.EnumValue.Аннулирован</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияВерсийЭД.EnumValue.ОбменЗавершен</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияВерсийЭД.EnumValue.ОбменЗавершенСИсправлением</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияВерсийЭД.EnumValue.ЗакрытПринудительно</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияВерсийЭД.EnumValue.Отклонен</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияВерсийЭД.EnumValue.НеСформирован</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияВерсийЭД.EnumValue.НеПолучен</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияВерсийЭД.EnumValue.ОжидаетсяАннулирование</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияВерсийЭД.EnumValue.ОжидаетсяИзвещениеОПолучении</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияВерсийЭД.EnumValue.ОжидаетсяКорректировка</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияВерсийЭД.EnumValue.ОжидаетсяОтправкаИзвещения</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияВерсийЭД.EnumValue.ОжидаетсяПередачаОператору</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияВерсийЭД.EnumValue.ОжидаетсяПодтверждение</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияВерсийЭД.EnumValue.ОжидаетсяПодтверждениеОператора</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияВерсийЭД.EnumValue.ОжидаетсяОтправкаПолучателю</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияВерсийЭД.EnumValue.ТребуетсяАннулировать</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияВерсийЭД.EnumValue.ОшибкаПередачи</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияВерсийЭД.EnumValue.ОжидаетсяОтправка</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияВерсийЭД.EnumValue.НаПодписи</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияВерсийЭД.EnumValue.ИзвещениеНаПодписи</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияВерсийЭД.EnumValue.НаУтверждении</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияВерсийЭД.EnumValue.ТребуетсяУточнитьДокумент</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="СостояниеЭДОИсхКонтекстноеМеню" id="273"/>
+									<ExtendedTooltip name="СостояниеЭДОИсхРасширеннаяПодсказка" id="632"/>
+									<Events>
+										<Event name="OnChange">СостояниеЭДОИсхПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="СписокИсх" id="274">
+							<Representation>List</Representation>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>СписокИсх</DataPath>
+							<RowPictureDataPath>СписокИсх.DefaultPicture</RowPictureDataPath>
+							<CommandSet>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>Choose</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+								<ExcludedCommand>Create</ExcludedCommand>
+								<ExcludedCommand>Delete</ExcludedCommand>
+								<ExcludedCommand>SetDeletionMark</ExcludedCommand>
+							</CommandSet>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="СписокИсхКонтекстноеМеню" id="275">
+								<ChildItems>
+									<Button name="СписокИсхКонтекстноеМенюСправочникЭДПрисоединенныеФайлыСтруктураЭДО" id="423">
+										<Type>CommandBarButton</Type>
+										<CommandName>Catalog.ЭДПрисоединенныеФайлы.Command.СтруктураЭДО</CommandName>
+										<DataPath>Items.СписокИсх.CurrentData.Ref</DataPath>
+										<ExtendedTooltip name="СписокИсхКонтекстноеМенюСправочникЭДПрисоединенныеФайлыСтруктураЭДОРасширеннаяПодсказка" id="633"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="СписокИсхКоманднаяПанель" id="276">
+								<ChildItems>
+									<ButtonGroup name="СписокГруппаКнопокИсх" id="336">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список группа кнопок</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список доступных действий</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="СписокГруппаКнопокИсхРасширеннаяПодсказка" id="634"/>
+										<ChildItems>
+											<Button name="СписокИсхСравнитьДанныеЭДИсх" id="399">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.СравнитьДанныеЭДИсх</CommandName>
+												<ExtendedTooltip name="СписокИсхСравнитьДанныеЭДИсхРасширеннаяПодсказка" id="635"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<ButtonGroup name="СписокИсхГруппаВыгрузить" id="418">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список исх группа выгрузить</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Открыть форму выгрузки электронных документов в файл, для передачи в ФНС</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="СписокИсхГруппаВыгрузитьРасширеннаяПодсказка" id="636"/>
+										<ChildItems>
+											<Button name="СписокИсхИсходящиеВыгрузитьЭлектронныеДокументыДляФНС" id="419">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ИсходящиеВыгрузитьЭлектронныеДокументыДляФНС</CommandName>
+												<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="СписокИсхИсходящиеВыгрузитьЭлектронныеДокументыДляФНСРасширеннаяПодсказка" id="637"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<ButtonGroup name="ГруппаКомандыФормыИсх" id="300">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Группа команды формы</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Группа команды формы</v8:content>
+											</v8:item>
+										</ToolTip>
+										<CommandSource>Form</CommandSource>
+										<ExtendedTooltip name="ГруппаКомандыФормыИсхРасширеннаяПодсказка" id="638"/>
+									</ButtonGroup>
+									<Button name="СписокИсхСправка" id="403">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.StandardCommand.Help</CommandName>
+										<ExtendedTooltip name="СписокИсхСправкаРасширеннаяПодсказка" id="639"/>
+									</Button>
+									<Button name="СписокИсхСправочникЭДПрисоединенныеФайлыСтруктураЭДО" id="422">
+										<Type>CommandBarButton</Type>
+										<CommandName>Catalog.ЭДПрисоединенныеФайлы.Command.СтруктураЭДО</CommandName>
+										<DataPath>Items.СписокИсх.CurrentData.Ref</DataPath>
+										<ExtendedTooltip name="СписокИсхСправочникЭДПрисоединенныеФайлыСтруктураЭДОРасширеннаяПодсказка" id="640"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="СписокИсхРасширеннаяПодсказка" id="641"/>
+							<SearchStringAddition name="СписокИсхСтрокаПоиска" id="642">
+								<AdditionSource>
+									<Item>СписокИсх</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокИсхСтрокаПоискаКонтекстноеМеню" id="643"/>
+								<ExtendedTooltip name="СписокИсхСтрокаПоискаРасширеннаяПодсказка" id="644"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокИсхСостояниеПросмотра" id="645">
+								<AdditionSource>
+									<Item>СписокИсх</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокИсхСостояниеПросмотраКонтекстноеМеню" id="646"/>
+								<ExtendedTooltip name="СписокИсхСостояниеПросмотраРасширеннаяПодсказка" id="647"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокИсхУправлениеПоиском" id="648">
+								<AdditionSource>
+									<Item>СписокИсх</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокИсхУправлениеПоискомКонтекстноеМеню" id="649"/>
+								<ExtendedTooltip name="СписокИсхУправлениеПоискомРасширеннаяПодсказка" id="650"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">СписокВыбор</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="СписокИсхВидЭД" id="305">
+									<DataPath>СписокИсх.ВидЭДИсх</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Вид документа</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СписокИсхВидЭДКонтекстноеМеню" id="306"/>
+									<ExtendedTooltip name="СписокИсхВидЭДРасширеннаяПодсказка" id="651"/>
+								</LabelField>
+								<LabelField name="СписокИсхНомерДокумента" id="321">
+									<DataPath>СписокИсх.НомерДокумента</DataPath>
+									<Width>20</Width>
+									<ContextMenu name="СписокИсхНомерДокументаКонтекстноеМеню" id="322"/>
+									<ExtendedTooltip name="СписокИсхНомерДокументаРасширеннаяПодсказка" id="652"/>
+								</LabelField>
+								<LabelField name="СписокИсхДатаДокумента" id="307">
+									<DataPath>СписокИсх.ДатаДокумента</DataPath>
+									<ContextMenu name="СписокИсхДатаДокументаКонтекстноеМеню" id="308"/>
+									<ExtendedTooltip name="СписокИсхДатаДокументаРасширеннаяПодсказка" id="653"/>
+								</LabelField>
+								<LabelField name="СписокИсхКонтрагент" id="315">
+									<DataPath>СписокИсх.Контрагент</DataPath>
+									<ContextMenu name="СписокИсхКонтрагентКонтекстноеМеню" id="316"/>
+									<ExtendedTooltip name="СписокИсхКонтрагентРасширеннаяПодсказка" id="654"/>
+								</LabelField>
+								<LabelField name="СписокИсхОрганизация" id="323">
+									<DataPath>СписокИсх.Организация</DataPath>
+									<ContextMenu name="СписокИсхОрганизацияКонтекстноеМеню" id="324"/>
+									<ExtendedTooltip name="СписокИсхОрганизацияРасширеннаяПодсказка" id="655"/>
+								</LabelField>
+								<LabelField name="СписокИсхДатаСоздания" id="311">
+									<DataPath>СписокИсх.ДатаСоздания</DataPath>
+									<Width>20</Width>
+									<ContextMenu name="СписокИсхДатаСозданияКонтекстноеМеню" id="312"/>
+									<ExtendedTooltip name="СписокИсхДатаСозданияРасширеннаяПодсказка" id="656"/>
+								</LabelField>
+								<InputField name="СписокИсхСостояниеЭДО" id="589">
+									<DataPath>СписокИсх.СостояниеЭДОИсх</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Состояние ЭДО</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СписокИсхСостояниеЭДОКонтекстноеМеню" id="590"/>
+									<ExtendedTooltip name="СписокИсхСостояниеЭДОРасширеннаяПодсказка" id="657"/>
+								</InputField>
+								<InputField name="СписокИсхДатаИзмененияСостоянияЭДО" id="592">
+									<DataPath>СписокИсх.ДатаИзмененияСостоянияЭДО</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дата последнего изменения</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СписокИсхДатаИзмененияСостоянияЭДОКонтекстноеМеню" id="593"/>
+									<ExtendedTooltip name="СписокИсхДатаИзмененияСостоянияЭДОРасширеннаяПодсказка" id="658"/>
+								</InputField>
+								<LabelField name="СписокИсхОтветственный" id="325">
+									<DataPath>СписокИсх.Ответственный</DataPath>
+									<ContextMenu name="СписокИсхОтветственныйКонтекстноеМеню" id="326"/>
+									<ExtendedTooltip name="СписокИсхОтветственныйРасширеннаяПодсказка" id="659"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="НераспакованныеПЭД" id="195">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Нераспакованные пакеты</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Нераспакованные транспортные контейнеры для обработки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="НераспакованныеПЭДРасширеннаяПодсказка" id="660"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаБыстрыеОтборыНераспакованныеПакеты" id="250">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Быстрые отборы</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Быстрые отборы</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаБыстрыеОтборыНераспакованныеПакетыРасширеннаяПодсказка" id="661"/>
+							<ChildItems>
+								<InputField name="КонтрагентНераспакованногоПакета" id="251">
+									<DataPath>КонтрагентНераспакованногоПакета</DataPath>
+									<TitleLocation>Top</TitleLocation>
+									<Width>25</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ClearButton>true</ClearButton>
+									<OpenButton>false</OpenButton>
+									<ContextMenu name="КонтрагентНераспакованногоПакетаКонтекстноеМеню" id="252"/>
+									<ExtendedTooltip name="КонтрагентНераспакованногоПакетаРасширеннаяПодсказка" id="662"/>
+									<Events>
+										<Event name="OnChange">КонтрагентНераспакованногоПакетаПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="СтатусНераспакованногоПакета" id="255">
+									<DataPath>СтатусНераспакованногоПакета</DataPath>
+									<TitleLocation>Top</TitleLocation>
+									<Width>25</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ClearButton>true</ClearButton>
+									<OpenButton>false</OpenButton>
+									<ListChoiceMode>true</ListChoiceMode>
+									<QuickChoice>true</QuickChoice>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СтатусыПакетовЭД.EnumValue.КРаспаковке</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СтатусыПакетовЭД.EnumValue.Отменен</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="СтатусНераспакованногоПакетаКонтекстноеМеню" id="256"/>
+									<ExtendedTooltip name="СтатусНераспакованногоПакетаРасширеннаяПодсказка" id="663"/>
+									<Events>
+										<Event name="OnChange">СтатусНераспакованногоПакетаПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="НераспакованныеПакеты" id="196">
+							<Representation>List</Representation>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>НераспакованныеПакеты</DataPath>
+							<RowPictureDataPath>НераспакованныеПакеты.DefaultPicture</RowPictureDataPath>
+							<CommandSet>
+								<ExcludedCommand>Choose</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>Create</ExcludedCommand>
+							</CommandSet>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="НераспакованныеПакетыКонтекстноеМеню" id="197"/>
+							<AutoCommandBar name="НераспакованныеПакетыКоманднаяПанель" id="198">
+								<ChildItems>
+									<ButtonGroup name="ГруппаКнопок" id="264">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Группа кнопок</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Группа кнопок</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="ГруппаКнопокРасширеннаяПодсказка" id="664"/>
+										<ChildItems>
+											<Button name="РаспаковатьВыделенныеПакеты" id="226">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.РаспаковатьВыделенныеПакеты</CommandName>
+												<ExtendedTooltip name="РаспаковатьВыделенныеПакетыРасширеннаяПодсказка" id="665"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<Popup name="ГруппаУстановитьСтатус" id="257">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Установить статус</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Назначение статуса загрузки для выбранных ЭД</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="ГруппаУстановитьСтатусРасширеннаяПодсказка" id="666"/>
+										<ChildItems>
+											<Button name="УстановитьСтатусКРаспаковке" id="259">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.УстановитьСтатусКРаспаковке</CommandName>
+												<ExtendedTooltip name="УстановитьСтатусКРаспаковкеРасширеннаяПодсказка" id="667"/>
+											</Button>
+											<Button name="УстановитьСтатусОтмененНераспакованныеПакеты" id="261">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.УстановитьСтатусОтмененНераспакованныеПакеты</CommandName>
+												<ExtendedTooltip name="УстановитьСтатусОтмененНераспакованныеПакетыРасширеннаяПодсказка" id="668"/>
+											</Button>
+										</ChildItems>
+									</Popup>
+									<ButtonGroup name="ГруппаКомандыФормыПакеты" id="263">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Группа команды формы</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Группа команды формы</v8:content>
+											</v8:item>
+										</ToolTip>
+										<CommandSource>Form</CommandSource>
+										<ExtendedTooltip name="ГруппаКомандыФормыПакетыРасширеннаяПодсказка" id="669"/>
+									</ButtonGroup>
+									<Button name="НераспакованныеПакетыСправка" id="404">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.StandardCommand.Help</CommandName>
+										<ExtendedTooltip name="НераспакованныеПакетыСправкаРасширеннаяПодсказка" id="670"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="НераспакованныеПакетыРасширеннаяПодсказка" id="671"/>
+							<SearchStringAddition name="НераспакованныеПакетыСтрокаПоиска" id="672">
+								<AdditionSource>
+									<Item>НераспакованныеПакеты</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="НераспакованныеПакетыСтрокаПоискаКонтекстноеМеню" id="673"/>
+								<ExtendedTooltip name="НераспакованныеПакетыСтрокаПоискаРасширеннаяПодсказка" id="674"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="НераспакованныеПакетыСостояниеПросмотра" id="675">
+								<AdditionSource>
+									<Item>НераспакованныеПакеты</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="НераспакованныеПакетыСостояниеПросмотраКонтекстноеМеню" id="676"/>
+								<ExtendedTooltip name="НераспакованныеПакетыСостояниеПросмотраРасширеннаяПодсказка" id="677"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="НераспакованныеПакетыУправлениеПоиском" id="678">
+								<AdditionSource>
+									<Item>НераспакованныеПакеты</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="НераспакованныеПакетыУправлениеПоискомКонтекстноеМеню" id="679"/>
+								<ExtendedTooltip name="НераспакованныеПакетыУправлениеПоискомРасширеннаяПодсказка" id="680"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="НераспакованныеПакетыКонтрагент" id="203">
+									<DataPath>НераспакованныеПакеты.Контрагент</DataPath>
+									<ContextMenu name="НераспакованныеПакетыКонтрагентКонтекстноеМеню" id="204"/>
+									<ExtendedTooltip name="НераспакованныеПакетыКонтрагентРасширеннаяПодсказка" id="681"/>
+								</LabelField>
+								<LabelField name="НераспакованныеПакетыСтатус" id="207">
+									<DataPath>НераспакованныеПакеты.Статус</DataPath>
+									<ContextMenu name="НераспакованныеПакетыСтатусКонтекстноеМеню" id="208"/>
+									<ExtendedTooltip name="НераспакованныеПакетыСтатусРасширеннаяПодсказка" id="682"/>
+								</LabelField>
+								<LabelField name="НераспакованныеПакетыДатаПолучения" id="199">
+									<DataPath>НераспакованныеПакеты.ДатаПолучения</DataPath>
+									<Width>8</Width>
+									<ContextMenu name="НераспакованныеПакетыДатаПолученияКонтекстноеМеню" id="200"/>
+									<ExtendedTooltip name="НераспакованныеПакетыДатаПолученияРасширеннаяПодсказка" id="683"/>
+								</LabelField>
+								<LabelField name="НераспакованныеПакетыОрганизация" id="205">
+									<DataPath>НераспакованныеПакеты.Организация</DataPath>
+									<ContextMenu name="НераспакованныеПакетыОрганизацияКонтекстноеМеню" id="206"/>
+									<ExtendedTooltip name="НераспакованныеПакетыОрганизацияРасширеннаяПодсказка" id="684"/>
+								</LabelField>
+								<LabelField name="НераспакованныеПакетыПакет" id="243">
+									<DataPath>НераспакованныеПакеты.Пакет</DataPath>
+									<ContextMenu name="НераспакованныеПакетыПакетКонтекстноеМеню" id="244"/>
+									<ExtendedTooltip name="НераспакованныеПакетыПакетРасширеннаяПодсказка" id="685"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="НеотправленныеПЭД" id="374">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Неотправленные пакеты</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Неотправленные ПЭД</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="НеотправленныеПЭДРасширеннаяПодсказка" id="686"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаБыстрыеОтборыНеотправленныеПакеты" id="389">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Быстрые отборы</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Быстрые отборы</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаБыстрыеОтборыНеотправленныеПакетыРасширеннаяПодсказка" id="687"/>
+							<ChildItems>
+								<InputField name="КонтрагентНеотправленногоПакета" id="390">
+									<DataPath>КонтрагентНеотправленногоПакета</DataPath>
+									<TitleLocation>Top</TitleLocation>
+									<Width>25</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ClearButton>true</ClearButton>
+									<OpenButton>false</OpenButton>
+									<ContextMenu name="КонтрагентНеотправленногоПакетаКонтекстноеМеню" id="391"/>
+									<ExtendedTooltip name="КонтрагентНеотправленногоПакетаРасширеннаяПодсказка" id="688"/>
+									<Events>
+										<Event name="OnChange">КонтрагентНеотправленногоПакетаПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="СтатусНеотправленногоПакета" id="392">
+									<DataPath>СтатусНеотправленногоПакета</DataPath>
+									<TitleLocation>Top</TitleLocation>
+									<Width>25</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ClearButton>true</ClearButton>
+									<OpenButton>false</OpenButton>
+									<ListChoiceMode>true</ListChoiceMode>
+									<QuickChoice>true</QuickChoice>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СтатусыПакетовЭД.EnumValue.ПодготовленКОтправке</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СтатусыПакетовЭД.EnumValue.Отменен</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="СтатусНеотправленногоПакетаКонтекстноеМеню" id="393"/>
+									<ExtendedTooltip name="СтатусНеотправленногоПакетаРасширеннаяПодсказка" id="689"/>
+									<Events>
+										<Event name="OnChange">СтатусНеотправленногоПакетаПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="НеотправленныеПакеты" id="375">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>НеотправленныеПакеты</DataPath>
+							<RowPictureDataPath>НеотправленныеПакеты.DefaultPicture</RowPictureDataPath>
+							<CommandSet>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>Create</ExcludedCommand>
+							</CommandSet>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="НеотправленныеПакетыКонтекстноеМеню" id="376"/>
+							<AutoCommandBar name="НеотправленныеПакетыКоманднаяПанель" id="377">
+								<ChildItems>
+									<ButtonGroup name="ГруппаКнопокНеотправленныеПакеты" id="397">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Группа кнопок</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Группа кнопок</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="ГруппаКнопокНеотправленныеПакетыРасширеннаяПодсказка" id="690"/>
+										<ChildItems>
+											<Button name="ОтправитьВыделенныеПакеты" id="398">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ОтправитьВыделенныеПакеты</CommandName>
+												<ExtendedTooltip name="ОтправитьВыделенныеПакетыРасширеннаяПодсказка" id="691"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<Popup name="ГруппаУстановитьСтатусНеоправленныеПакеты" id="394">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Установить статус</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Назначение статуса загрузки для выбранных ЭД</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="ГруппаУстановитьСтатусНеоправленныеПакетыРасширеннаяПодсказка" id="692"/>
+										<ChildItems>
+											<Button name="УстановитьСтатусПодготовленКОтправке" id="395">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.УстановитьСтатусПодготовленКОтправке</CommandName>
+												<ExtendedTooltip name="УстановитьСтатусПодготовленКОтправкеРасширеннаяПодсказка" id="693"/>
+											</Button>
+											<Button name="УстановитьСтатусОтмененНеотправленныеПакеты" id="396">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.УстановитьСтатусОтмененНеотправленныеПакеты</CommandName>
+												<ExtendedTooltip name="УстановитьСтатусОтмененНеотправленныеПакетыРасширеннаяПодсказка" id="694"/>
+											</Button>
+										</ChildItems>
+									</Popup>
+									<Button name="НеотправленныеПакетыСправка" id="405">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.StandardCommand.Help</CommandName>
+										<ExtendedTooltip name="НеотправленныеПакетыСправкаРасширеннаяПодсказка" id="695"/>
+									</Button>
+									<ButtonGroup name="НеопреавленныеПакетыГруппаКомандыФормы" id="414">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Группа команды формы</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Группа команды формы</v8:content>
+											</v8:item>
+										</ToolTip>
+										<CommandSource>Form</CommandSource>
+										<ExtendedTooltip name="НеопреавленныеПакетыГруппаКомандыФормыРасширеннаяПодсказка" id="696"/>
+									</ButtonGroup>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="НеотправленныеПакетыРасширеннаяПодсказка" id="697"/>
+							<SearchStringAddition name="НеотправленныеПакетыСтрокаПоиска" id="698">
+								<AdditionSource>
+									<Item>НеотправленныеПакеты</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="НеотправленныеПакетыСтрокаПоискаКонтекстноеМеню" id="699"/>
+								<ExtendedTooltip name="НеотправленныеПакетыСтрокаПоискаРасширеннаяПодсказка" id="700"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="НеотправленныеПакетыСостояниеПросмотра" id="701">
+								<AdditionSource>
+									<Item>НеотправленныеПакеты</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="НеотправленныеПакетыСостояниеПросмотраКонтекстноеМеню" id="702"/>
+								<ExtendedTooltip name="НеотправленныеПакетыСостояниеПросмотраРасширеннаяПодсказка" id="703"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="НеотправленныеПакетыУправлениеПоиском" id="704">
+								<AdditionSource>
+									<Item>НеотправленныеПакеты</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="НеотправленныеПакетыУправлениеПоискомКонтекстноеМеню" id="705"/>
+								<ExtendedTooltip name="НеотправленныеПакетыУправлениеПоискомРасширеннаяПодсказка" id="706"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="НеотправленныеПакетыКонтрагент" id="380">
+									<DataPath>НеотправленныеПакеты.Контрагент</DataPath>
+									<ContextMenu name="НеотправленныеПакетыКонтрагентКонтекстноеМеню" id="381"/>
+									<ExtendedTooltip name="НеотправленныеПакетыКонтрагентРасширеннаяПодсказка" id="707"/>
+								</LabelField>
+								<LabelField name="НеотправленныеПакетыСтатус" id="386">
+									<DataPath>НеотправленныеПакеты.Статус</DataPath>
+									<ContextMenu name="НеотправленныеПакетыСтатусКонтекстноеМеню" id="387"/>
+									<ExtendedTooltip name="НеотправленныеПакетыСтатусРасширеннаяПодсказка" id="708"/>
+								</LabelField>
+								<LabelField name="НеотправленныеПакетыДатаСоздания" id="378">
+									<DataPath>НеотправленныеПакеты.ДатаСоздания</DataPath>
+									<ContextMenu name="НеотправленныеПакетыДатаСозданияКонтекстноеМеню" id="379"/>
+									<ExtendedTooltip name="НеотправленныеПакетыДатаСозданияРасширеннаяПодсказка" id="709"/>
+								</LabelField>
+								<LabelField name="НеотправленныеПакетыОрганизация" id="382">
+									<DataPath>НеотправленныеПакеты.Организация</DataPath>
+									<ContextMenu name="НеотправленныеПакетыОрганизацияКонтекстноеМеню" id="383"/>
+									<ExtendedTooltip name="НеотправленныеПакетыОрганизацияРасширеннаяПодсказка" id="710"/>
+								</LabelField>
+								<LabelField name="НеотправленныеПакетыПакет" id="384">
+									<DataPath>НеотправленныеПакеты.Пакет</DataPath>
+									<ContextMenu name="НеотправленныеПакетыПакетКонтекстноеМеню" id="385"/>
+									<ExtendedTooltip name="НеотправленныеПакетыПакетРасширеннаяПодсказка" id="711"/>
+								</LabelField>
+								<LabelField name="НеотправленныеПакетыСоглашение" id="400">
+									<DataPath>~НеотправленныеПакеты.Соглашение</DataPath>
+									<ContextMenu name="НеотправленныеПакетыСоглашениеКонтекстноеМеню" id="401"/>
+									<ExtendedTooltip name="НеотправленныеПакетыСоглашениеРасширеннаяПодсказка" id="712"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="Пакеты" id="340">
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+						<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+					</UserVisible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Все пакеты</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пакеты</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ПакетыРасширеннаяПодсказка" id="713"/>
+					<ChildItems>
+						<Table name="ВсеПакеты" id="341">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>ВсеПакеты</DataPath>
+							<RowPictureDataPath>ВсеПакеты.DefaultPicture</RowPictureDataPath>
+							<CommandSet>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>Create</ExcludedCommand>
+								<ExcludedCommand>Delete</ExcludedCommand>
+							</CommandSet>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="ВсеПакетыКонтекстноеМеню" id="342"/>
+							<AutoCommandBar name="ВсеПакетыКоманднаяПанель" id="343">
+								<ChildItems>
+									<ButtonGroup name="ВсеПакетыГруппаКоманд" id="388">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Все пакеты группа команд</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Все пакеты группа команд</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="ВсеПакетыГруппаКомандРасширеннаяПодсказка" id="714"/>
+										<ChildItems>
+											<Button name="УдалениеПакетовЭлектронныхДокументов" id="335">
+												<Type>CommandBarButton</Type>
+												<CommandName>DataProcessor.УдалениеФайловОтработанныхПакетовЭД.Command.УдалениеФайловОтработанныхПакетовЭД</CommandName>
+												<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="УдалениеПакетовЭлектронныхДокументовРасширеннаяПодсказка" id="715"/>
+											</Button>
+											<Button name="ВсеПакетыСохранитьПакетНаДиск" id="413">
+												<Type>CommandBarButton</Type>
+												<Representation>PictureAndText</Representation>
+												<CommandName>Form.Command.СохранитьПакетыЭДНаДиск</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.СохранитьФайлКак</xr:Ref>
+													<xr:LoadTransparent>false</xr:LoadTransparent>
+												</Picture>
+												<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="ВсеПакетыСохранитьПакетНаДискРасширеннаяПодсказка" id="716"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<Button name="ВсеПакетыСправка" id="406">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.StandardCommand.Help</CommandName>
+										<ExtendedTooltip name="ВсеПакетыСправкаРасширеннаяПодсказка" id="717"/>
+									</Button>
+									<ButtonGroup name="ВсеПаветыГруппаКомандыФормы" id="415">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Группа команды формы</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Группа команды формы</v8:content>
+											</v8:item>
+										</ToolTip>
+										<CommandSource>Form</CommandSource>
+										<ExtendedTooltip name="ВсеПаветыГруппаКомандыФормыРасширеннаяПодсказка" id="718"/>
+									</ButtonGroup>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ВсеПакетыРасширеннаяПодсказка" id="719"/>
+							<SearchStringAddition name="ВсеПакетыСтрокаПоиска" id="720">
+								<AdditionSource>
+									<Item>ВсеПакеты</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ВсеПакетыСтрокаПоискаКонтекстноеМеню" id="721"/>
+								<ExtendedTooltip name="ВсеПакетыСтрокаПоискаРасширеннаяПодсказка" id="722"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ВсеПакетыСостояниеПросмотра" id="723">
+								<AdditionSource>
+									<Item>ВсеПакеты</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ВсеПакетыСостояниеПросмотраКонтекстноеМеню" id="724"/>
+								<ExtendedTooltip name="ВсеПакетыСостояниеПросмотраРасширеннаяПодсказка" id="725"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ВсеПакетыУправлениеПоиском" id="726">
+								<AdditionSource>
+									<Item>ВсеПакеты</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ВсеПакетыУправлениеПоискомКонтекстноеМеню" id="727"/>
+								<ExtendedTooltip name="ВсеПакетыУправлениеПоискомРасширеннаяПодсказка" id="728"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ВсеПакетыДата" id="344">
+									<DataPath>ВсеПакеты.Date</DataPath>
+									<ContextMenu name="ВсеПакетыДатаКонтекстноеМеню" id="345"/>
+									<ExtendedTooltip name="ВсеПакетыДатаРасширеннаяПодсказка" id="729"/>
+								</LabelField>
+								<LabelField name="ВсеПакетыНомер" id="346">
+									<DataPath>ВсеПакеты.Number</DataPath>
+									<ContextMenu name="ВсеПакетыНомерКонтекстноеМеню" id="347"/>
+									<ExtendedTooltip name="ВсеПакетыНомерРасширеннаяПодсказка" id="730"/>
+								</LabelField>
+								<LabelField name="ВсеПакетыНаправление" id="348">
+									<DataPath>ВсеПакеты.Направление</DataPath>
+									<ContextMenu name="ВсеПакетыНаправлениеКонтекстноеМеню" id="349"/>
+									<ExtendedTooltip name="ВсеПакетыНаправлениеРасширеннаяПодсказка" id="731"/>
+								</LabelField>
+								<LabelField name="ВсеПакетыСоглашение" id="362">
+									<DataPath>ВсеПакеты.НастройкаЭДО</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Соглашение</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ВсеПакетыСоглашениеКонтекстноеМеню" id="363"/>
+									<ExtendedTooltip name="ВсеПакетыСоглашениеРасширеннаяПодсказка" id="732"/>
+								</LabelField>
+								<LabelField name="ВсеПакетыСтатусПакета" id="364">
+									<DataPath>ВсеПакеты.СтатусПакета</DataPath>
+									<ContextMenu name="ВсеПакетыСтатусПакетаКонтекстноеМеню" id="365"/>
+									<ExtendedTooltip name="ВсеПакетыСтатусПакетаРасширеннаяПодсказка" id="733"/>
+								</LabelField>
+								<LabelField name="ВсеПакетыКонтрагент" id="366">
+									<DataPath>ВсеПакеты.Контрагент</DataPath>
+									<ContextMenu name="ВсеПакетыКонтрагентКонтекстноеМеню" id="367"/>
+									<ExtendedTooltip name="ВсеПакетыКонтрагентРасширеннаяПодсказка" id="734"/>
+								</LabelField>
+								<LabelField name="ВсеПакетыОрганизация" id="368">
+									<DataPath>ВсеПакеты.Организация</DataPath>
+									<ContextMenu name="ВсеПакетыОрганизацияКонтекстноеМеню" id="369"/>
+									<ExtendedTooltip name="ВсеПакетыОрганизацияРасширеннаяПодсказка" id="735"/>
+								</LabelField>
+								<LabelField name="ВсеПакетыСпособОбменаЭД" id="370">
+									<DataPath>ВсеПакеты.СпособОбменаЭД</DataPath>
+									<ContextMenu name="ВсеПакетыСпособОбменаЭДКонтекстноеМеню" id="371"/>
+									<ExtendedTooltip name="ВсеПакетыСпособОбменаЭДРасширеннаяПодсказка" id="736"/>
+								</LabelField>
+								<LabelField name="ВсеПакетыПолучатель" id="350">
+									<DataPath>ВсеПакеты.Получатель</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Идентификатор получателя</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ВсеПакетыПолучательКонтекстноеМеню" id="351"/>
+									<ExtendedTooltip name="ВсеПакетыПолучательРасширеннаяПодсказка" id="737"/>
+								</LabelField>
+								<LabelField name="ВсеПакетыОтправитель" id="352">
+									<DataPath>ВсеПакеты.Отправитель</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Идентификатор отправителя</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ВсеПакетыОтправительКонтекстноеМеню" id="353"/>
+									<ExtendedTooltip name="ВсеПакетыОтправительРасширеннаяПодсказка" id="738"/>
+								</LabelField>
+								<LabelField name="ВсеПакетыАдресРесурсаОрганизации" id="356">
+									<DataPath>ВсеПакеты.АдресРесурсаОрганизации</DataPath>
+									<ContextMenu name="ВсеПакетыАдресРесурсаОрганизацииКонтекстноеМеню" id="357"/>
+									<ExtendedTooltip name="ВсеПакетыАдресРесурсаОрганизацииРасширеннаяПодсказка" id="739"/>
+								</LabelField>
+								<LabelField name="ВсеПакетыАдресРесурсаКонтрагента" id="358">
+									<DataPath>ВсеПакеты.АдресРесурсаКонтрагента</DataPath>
+									<ContextMenu name="ВсеПакетыАдресРесурсаКонтрагентаКонтекстноеМеню" id="359"/>
+									<ExtendedTooltip name="ВсеПакетыАдресРесурсаКонтрагентаРасширеннаяПодсказка" id="740"/>
+								</LabelField>
+								<LabelField name="ВсеПакетыКомментарий" id="372">
+									<DataPath>ВсеПакеты.Комментарий</DataPath>
+									<ContextMenu name="ВсеПакетыКомментарийКонтекстноеМеню" id="373"/>
+									<ExtendedTooltip name="ВсеПакетыКомментарийРасширеннаяПодсказка" id="741"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="7">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>~Список.НашОператор</Field>
+				<Field>Список.Ref</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ЭлектронныйДокументВходящий.Ссылка,
+	ЭлектронныйДокументВходящий.Ответственный,
+	ЭлектронныйДокументВходящий.Дата КАК ДатаПолучения,
+	ЭлектронныйДокументВходящий.Организация КАК Организация,
+	ЭлектронныйДокументВходящий.Контрагент КАК Контрагент,
+	ЭлектронныйДокументВходящий.НомерДокументаОтправителя КАК НомерДокумента,
+	ЭлектронныйДокументВходящий.ДатаДокументаОтправителя КАК ДатаДокумента,
+	ЭлектронныйДокументВходящий.СостояниеЭДО,
+	ЭлектронныйДокументВходящий.ДатаИзмененияСостоянияЭДО,
+	ЭлектронныйДокументВходящий.ВидЭД,
+	ВЫБОР
+        КОГДА 1 В
+                (ВЫБРАТЬ ПЕРВЫЕ 1
+                    1
+                ИЗ
+                    РегистрСведений.ЭлектронныеПодписиПоМЧД КАК ЭлектронныеПодписиПоМЧД
+                ГДЕ
+                    ЭлектронныйДокументВходящий.Ссылка = ЭлектронныеПодписиПоМЧД.ПодписанныйОбъект.ВладелецФайла 
+                    И ЭлектронныеПодписиПоМЧД.ПодписьВерна = Ложь
+                )
+            ТОГДА ИСТИНА
+        ИНАЧЕ ЛОЖЬ 
+        КОНЕЦ КАК ПодписьПоМЧДНеВерна        	
+ИЗ
+	Документ.ЭлектронныйДокументВходящий КАК ЭлектронныйДокументВходящий
+</QueryText>
+				<MainTable>Document.ЭлектронныйДокументВходящий</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>ДатаПолучения</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ВидЭД" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид документа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ВидыЭД</v8:Type>
+			</Type>
+			<Save>
+				<Field>ВидЭД</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Ответственный" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ответственный</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="НераспакованныеПакеты" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Нераспакованные пакеты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ПакетЭД.Ссылка КАК Пакет,
+	ПакетЭД.Организация КАК Организация,
+	ПакетЭД.Контрагент КАК Контрагент,
+	ПакетЭД.СтатусПакета КАК Статус,
+	ПакетЭД.Дата КАК ДатаПолучения
+ИЗ
+	Документ.ПакетЭД КАК ПакетЭД
+ГДЕ
+	ПакетЭД.ПометкаУдаления = ЛОЖЬ
+	И ПакетЭД.Направление = ЗНАЧЕНИЕ(Перечисление.НаправленияЭД.Входящий)
+	И (ПакетЭД.СтатусПакета = ЗНАЧЕНИЕ(Перечисление.СтатусыПакетовЭД.КРаспаковке)
+	ИЛИ ПакетЭД.СтатусПакета = ЗНАЧЕНИЕ(Перечисление.СтатусыПакетовЭД.Отменен))</QueryText>
+				<MainTable>Document.ПакетЭД</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ДатаПолучения</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="СтатусНераспакованногоПакета" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус пакета</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.СтатусыПакетовЭД</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КонтрагентНераспакованногоПакета" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контрагент</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокИсх" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список исх</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>~СписокИсх.НашОператор</Field>
+				<Field>СписокИсх.Ref</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ЭлектронныйДокументИсходящий.Ссылка,
+	ЭлектронныйДокументИсходящий.ВидЭД КАК ВидЭДИсх,
+	ЭлектронныйДокументИсходящий.Ответственный,
+	ЭлектронныйДокументИсходящий.Организация КАК Организация,
+	ЭлектронныйДокументИсходящий.Контрагент КАК Контрагент,
+	ЭлектронныйДокументИсходящий.Дата КАК ДатаСоздания,
+	ЭлектронныйДокументИсходящий.НомерДокументаОтправителя КАК НомерДокумента,
+	ЭлектронныйДокументИсходящий.ДатаДокументаОтправителя КАК ДатаДокумента,
+	ЭлектронныйДокументИсходящий.СостояниеЭДО КАК СостояниеЭДОИсх,
+	ЭлектронныйДокументИсходящий.ДатаИзмененияСостоянияЭДО,
+	ВЫБОР
+        КОГДА 1 В
+                (ВЫБРАТЬ ПЕРВЫЕ 1
+                    1
+                ИЗ
+                    РегистрСведений.ЭлектронныеПодписиПоМЧД КАК ЭлектронныеПодписиПоМЧД
+                ГДЕ
+                     ЭлектронныеПодписиПоМЧД.ПодписьВерна = Ложь
+                     И ЭлектронныйДокументИсходящий.Ссылка = ЭлектронныеПодписиПоМЧД.ПодписанныйОбъект.ВладелецФайла
+                 )
+            ТОГДА ИСТИНА
+        ИНАЧЕ ЛОЖЬ 
+        КОНЕЦ КАК ПодписьПоМЧДНеВерна 
+        	
+ИЗ
+	Документ.ЭлектронныйДокументИсходящий КАК ЭлектронныйДокументИсходящий</QueryText>
+				<MainTable>Document.ЭлектронныйДокументИсходящий</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>ДатаСоздания</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ОтветственныйИсх" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ответственный</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВидЭДИсх" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид документа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ВидыЭД</v8:Type>
+			</Type>
+			<Save>
+				<Field>ВидЭДИсх</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ВсеПакеты" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Все пакеты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ДокументПакетЭД.Ссылка,
+	ДокументПакетЭД.Номер,
+	ДокументПакетЭД.Дата,
+	ДокументПакетЭД.АдресРесурсаКонтрагента,
+	ДокументПакетЭД.АдресРесурсаОрганизации,
+	ДокументПакетЭД.Комментарий,
+	ДокументПакетЭД.Контрагент,
+	ДокументПакетЭД.Направление,
+	ДокументПакетЭД.НастройкаЭДО,
+	ДокументПакетЭД.Организация,
+	ДокументПакетЭД.Отправитель,
+	ДокументПакетЭД.Получатель,
+	ДокументПакетЭД.СпособОбменаЭД,
+	ДокументПакетЭД.СтатусПакета
+ИЗ
+	Документ.ПакетЭД КАК ДокументПакетЭД</QueryText>
+				<MainTable>Document.ПакетЭД</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Дата</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="НеотправленныеПакеты" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Неотправленные пакеты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ПакетЭД.Ссылка КАК Пакет,
+	ПакетЭД.Организация КАК Организация,
+	ПакетЭД.Контрагент КАК Контрагент,
+	ПакетЭД.СтатусПакета КАК Статус,
+	ПакетЭД.Дата КАК ДатаСоздания,
+	ПакетЭД.НастройкаЭДО КАК НастройкаЭДО
+ИЗ
+	Документ.ПакетЭД КАК ПакетЭД
+ГДЕ
+	ПакетЭД.ПометкаУдаления = ЛОЖЬ
+	И ПакетЭД.Направление = ЗНАЧЕНИЕ(Перечисление.НаправленияЭД.Исходящий)
+	И (ПакетЭД.СтатусПакета = ЗНАЧЕНИЕ(Перечисление.СтатусыПакетовЭД.ПодготовленКОтправке)
+			ИЛИ ПакетЭД.СтатусПакета = ЗНАЧЕНИЕ(Перечисление.СтатусыПакетовЭД.Отменен))</QueryText>
+				<MainTable>Document.ПакетЭД</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>ДатаСоздания</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="КонтрагентНеотправленногоПакета" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контрагент</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СтатусНеотправленногоПакета" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус пакета</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.СтатусыПакетовЭД</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Объект" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объект</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ЭлектронныеДокументы</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтображатьВсеДокументы" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отображать все документы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтображатьВсеДокументыИсх" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отображать все документы исх</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СостояниеЭДО" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Состояние ЭДО</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.СостоянияВерсийЭД</v8:Type>
+			</Type>
+			<Save>
+				<Field>СостояниеЭДО</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="СостояниеЭДОИсх" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Состояние ЭДО</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.СостоянияВерсийЭД</v8:Type>
+			</Type>
+			<Save>
+				<Field>СостояниеЭДОИсх</Field>
+			</Save>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="УстановитьОтветственного" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить ответственного</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить ответственного за обработку эл.документов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.User</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>УстановитьОтветственного</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СравнитьДанныеЭДВх" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сравнить версии 2-х электронных документов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сравнить данные 2-х электронных документов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.DataCompositionDataParameters</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СравнитьДанныеЭДВх</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="РаспаковатьВыделенныеПакеты" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Распаковать выделенные пакеты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Распаковать выделенные пакеты электронных документов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ReadChanges</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Распаковать</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="УстановитьСтатусКРаспаковке" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>К распаковке</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить статус "К распаковке"</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УстановитьСтатусКРаспаковке</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="УстановитьСтатусОтмененНераспакованныеПакеты" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменен</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить статус "Отменен"</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УстановитьСтатусОтменен</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="УстановитьСтатусПодготовленКОтправке" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подготовлен к отправке</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить статус "Подготовлен к отправке"</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УстановитьСтатусПодготовленКОтправке</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="УстановитьСтатусОтмененНеотправленныеПакеты" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменен</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить статус "Отменен"</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УстановитьСтатусОтменен</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОтправитьВыделенныеПакеты" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить выделенные пакеты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить выделенные пакеты электронных документов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.WriteChanges</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Отправить</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СравнитьДанныеЭДИсх" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сравнить версии 2-х электронных документов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сравнить данные 2-х электронных документов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.DataCompositionDataParameters</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СравнитьДанныеЭДИсх</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СохранитьПакетыЭДНаДиск" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить пакеты ЭД на диск</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить пакеты ЭД на диск</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СохранитьПакетыЭДНаДиск</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВходящиеВыгрузитьЭлектронныеДокументыДляФНС" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить электронные документы для ФНС</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Входящие выгрузить электронные документы для ФНС</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВходящиеВыгрузитьЭлектронныеДокументыДляФНС</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ИсходящиеВыгрузитьЭлектронныеДокументыДляФНС" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить электронные документы для ФНС</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Входящие выгрузить электронные документы для ФНС</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИсходящиеВыгрузитьЭлектронныеДокументыДляФНС</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

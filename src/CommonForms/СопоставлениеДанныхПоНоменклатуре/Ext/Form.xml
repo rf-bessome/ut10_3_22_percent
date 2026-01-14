@@ -1,0 +1,539 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="НоваяНоменклатураКонтрагентаЗаписать" id="16">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ЗаписатьНоменклатуруКонтрагента</CommandName>
+				<ExtendedTooltip name="НоваяНоменклатураКонтрагентаЗаписатьРасширеннаяПодсказка" id="67"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаЭД" id="33">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа ЭД</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа ЭД</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаЭДРасширеннаяПодсказка" id="68"/>
+			<ChildItems>
+				<LabelDecoration name="НадписьЭД" id="34">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Электронный документ:</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="НадписьЭДКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="НадписьЭДРасширеннаяПодсказка" id="69"/>
+				</LabelDecoration>
+				<LabelDecoration name="ПредставлениеЭД" id="31">
+					<Hyperlink>true</Hyperlink>
+					<ContextMenu name="ПредставлениеЭДКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="ПредставлениеЭДРасширеннаяПодсказка" id="70"/>
+					<Events>
+						<Event name="Click">ПредставлениеЭДНажатие</Event>
+					</Events>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<LabelField name="ЭлектронныйДокумент" id="20">
+			<DataPath>ЭлектронныйДокумент</DataPath>
+			<Visible>false</Visible>
+			<Hiperlink>true</Hiperlink>
+			<ContextMenu name="ЭлектронныйДокументКонтекстноеМеню" id="21"/>
+			<ExtendedTooltip name="ЭлектронныйДокументРасширеннаяПодсказка" id="71"/>
+		</LabelField>
+		<LabelField name="ЭлектронныйДокументКонтрагент" id="29">
+			<DataPath>Контрагент</DataPath>
+			<Hiperlink>true</Hiperlink>
+			<ContextMenu name="ЭлектронныйДокументКонтрагентКонтекстноеМеню" id="30"/>
+			<ExtendedTooltip name="ЭлектронныйДокументКонтрагентРасширеннаяПодсказка" id="72"/>
+		</LabelField>
+		<Table name="НесопоставленнаяНоменклатураКонтрагента" id="1">
+			<Representation>List</Representation>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>НесопоставленнаяНоменклатураКонтрагента</DataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="НесопоставленнаяНоменклатураКонтрагентаКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="НесопоставленнаяНоменклатураКонтрагентаКоманднаяПанель" id="3">
+				<ChildItems>
+					<Button name="НоваяНоменклатураКонтрагентаПрочитать" id="17">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПрочитатьНоменклатуруКонтрагента</CommandName>
+						<ExtendedTooltip name="НоваяНоменклатураКонтрагентаПрочитатьРасширеннаяПодсказка" id="73"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="НесопоставленнаяНоменклатураКонтрагентаРасширеннаяПодсказка" id="74"/>
+			<SearchStringAddition name="НесопоставленнаяНоменклатураКонтрагентаСтрокаПоиска" id="75">
+				<AdditionSource>
+					<Item>НесопоставленнаяНоменклатураКонтрагента</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="НесопоставленнаяНоменклатураКонтрагентаСтрокаПоискаКонтекстноеМеню" id="76"/>
+				<ExtendedTooltip name="НесопоставленнаяНоменклатураКонтрагентаСтрокаПоискаРасширеннаяПодсказка" id="77"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="НесопоставленнаяНоменклатураКонтрагентаСостояниеПросмотра" id="78">
+				<AdditionSource>
+					<Item>НесопоставленнаяНоменклатураКонтрагента</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="НесопоставленнаяНоменклатураКонтрагентаСостояниеПросмотраКонтекстноеМеню" id="79"/>
+				<ExtendedTooltip name="НесопоставленнаяНоменклатураКонтрагентаСостояниеПросмотраРасширеннаяПодсказка" id="80"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="НесопоставленнаяНоменклатураКонтрагентаУправлениеПоиском" id="81">
+				<AdditionSource>
+					<Item>НесопоставленнаяНоменклатураКонтрагента</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="НесопоставленнаяНоменклатураКонтрагентаУправлениеПоискомКонтекстноеМеню" id="82"/>
+				<ExtendedTooltip name="НесопоставленнаяНоменклатураКонтрагентаУправлениеПоискомРасширеннаяПодсказка" id="83"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="OnStartEdit">НесопоставленнаяНоменклатураКонтрагентаПриНачалеРедактирования</Event>
+				<Event name="OnChange">НесопоставленнаяНоменклатураКонтрагентаПриИзменении</Event>
+			</Events>
+			<ChildItems>
+				<ColumnGroup name="НоваяНоменклатураКонтрагентаНоменклатураХарактеристика" id="22">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Новая номенклатура контрагента номенклатура характеристика</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ExtendedTooltip name="НоваяНоменклатураКонтрагентаНоменклатураХарактеристикаРасширеннаяПодсказка" id="84"/>
+					<ChildItems>
+						<InputField name="НоваяНоменклатураКонтрагентаНоменклатура" id="12">
+							<DataPath>НесопоставленнаяНоменклатураКонтрагента.Номенклатура</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>35</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<AutoMarkIncomplete>true</AutoMarkIncomplete>
+							<ContextMenu name="НоваяНоменклатураКонтрагентаНоменклатураКонтекстноеМеню" id="13"/>
+							<ExtendedTooltip name="НоваяНоменклатураКонтрагентаНоменклатураРасширеннаяПодсказка" id="85"/>
+							<Events>
+								<Event name="StartChoice">НоваяНоменклатураКонтрагентаНоменклатураНачалоВыбора</Event>
+							</Events>
+						</InputField>
+						<ColumnGroup name="ГруппаХарактеристикаУпаковка" id="63">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа характеристика упаковка</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа характеристика упаковка</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<ExtendedTooltip name="ГруппаХарактеристикаУпаковкаРасширеннаяПодсказка" id="86"/>
+							<ChildItems>
+								<InputField name="НоваяНоменклатураКонтрагентаХарактеристикаНоменклатуры" id="14">
+									<DataPath>НесопоставленнаяНоменклатураКонтрагента.ХарактеристикаНоменклатуры</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ChooseType>false</ChooseType>
+									<ChoiceParameterLinks>
+										<xr:Link>
+											<xr:Name>Отбор.Владелец</xr:Name>
+											<xr:DataPath xsi:type="xs:string">Items.НесопоставленнаяНоменклатураКонтрагента.CurrentData.Номенклатура</xr:DataPath>
+											<xr:ValueChange>Clear</xr:ValueChange>
+										</xr:Link>
+									</ChoiceParameterLinks>
+									<ContextMenu name="НоваяНоменклатураКонтрагентаХарактеристикаНоменклатурыКонтекстноеМеню" id="15"/>
+									<ExtendedTooltip name="НоваяНоменклатураКонтрагентаХарактеристикаНоменклатурыРасширеннаяПодсказка" id="87"/>
+								</InputField>
+								<InputField name="НоваяНоменклатураКонтрагентаУпаковка" id="65">
+									<DataPath>НесопоставленнаяНоменклатураКонтрагента.Упаковка</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>5</Width>
+									<ContextMenu name="НоваяНоменклатураКонтрагентаУпаковкаКонтекстноеМеню" id="66"/>
+									<ExtendedTooltip name="НоваяНоменклатураКонтрагентаУпаковкаРасширеннаяПодсказка" id="88"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="НоваяНоменклатураКонтрагентаКодАртикулЕдиница" id="23">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Новая номенклатура контрагента код артикул единица</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Новая номенклатура контрагента код артикул единица</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>30</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ExtendedTooltip name="НоваяНоменклатураКонтрагентаКодАртикулЕдиницаРасширеннаяПодсказка" id="89"/>
+					<ChildItems>
+						<InputField name="НоваяНоменклатураКонтрагентаНаименованиеНоменклатурыКонтрагента" id="8">
+							<DataPath>НесопоставленнаяНоменклатураКонтрагента.НаименованиеНоменклатурыКонтрагента</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>30</Width>
+							<TextEdit>false</TextEdit>
+							<ContextMenu name="НоваяНоменклатураКонтрагентаНаименованиеНоменклатурыКонтрагентаКонтекстноеМеню" id="9"/>
+							<ExtendedTooltip name="НоваяНоменклатураКонтрагентаНаименованиеНоменклатурыКонтрагентаРасширеннаяПодсказка" id="90"/>
+						</InputField>
+						<ColumnGroup name="НоваяНоменклатураКонтрагентаКодАртикул" id="26">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Новая номенклатура контрагента код артикул</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Новая номенклатура контрагента код артикул</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>30</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<ExtendedTooltip name="НоваяНоменклатураКонтрагентаКодАртикулРасширеннаяПодсказка" id="91"/>
+							<ChildItems>
+								<InputField name="НоваяНоменклатураКонтрагентаАртикулНоменклатурыКонтрагента" id="6">
+									<DataPath>НесопоставленнаяНоменклатураКонтрагента.АртикулНоменклатурыКонтрагента</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>10</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="НоваяНоменклатураКонтрагентаАртикулНоменклатурыКонтрагентаКонтекстноеМеню" id="7"/>
+									<ExtendedTooltip name="НоваяНоменклатураКонтрагентаАртикулНоменклатурыКонтрагентаРасширеннаяПодсказка" id="92"/>
+								</InputField>
+								<InputField name="НоваяНоменклатураКонтрагентаЕдиницаНоменклатурыКонтрагента" id="10">
+									<DataPath>НесопоставленнаяНоменклатураКонтрагента.ЕдиницаНоменклатурыКонтрагента</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>10</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="НоваяНоменклатураКонтрагентаЕдиницаНоменклатурыКонтрагентаКонтекстноеМеню" id="11"/>
+									<ExtendedTooltip name="НоваяНоменклатураКонтрагентаЕдиницаНоменклатурыКонтрагентаРасширеннаяПодсказка" id="93"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+					</ChildItems>
+				</ColumnGroup>
+				<InputField name="НоваяНоменклатураКонтрагентаОписание" id="24">
+					<DataPath>НесопоставленнаяНоменклатураКонтрагента.Описание</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НоваяНоменклатураКонтрагентаОписаниеКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="НоваяНоменклатураКонтрагентаОписаниеРасширеннаяПодсказка" id="94"/>
+				</InputField>
+				<InputField name="НоваяНоменклатураКонтрагентаИдентификатор" id="27">
+					<DataPath>НесопоставленнаяНоменклатураКонтрагента.Идентификатор</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НоваяНоменклатураКонтрагентаИдентификаторКонтекстноеМеню" id="28"/>
+					<ExtendedTooltip name="НоваяНоменклатураКонтрагентаИдентификаторРасширеннаяПодсказка" id="95"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ЭлектронныйДокумент" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Электронный документ</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="НесопоставленнаяНоменклатураКонтрагента" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Несопоставленная номенклатура контрагента</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="АртикулНоменклатурыКонтрагента" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Артикул</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НаименованиеНоменклатурыКонтрагента" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование номенклатуры контрагента</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЕдиницаНоменклатурыКонтрагента" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Базовая единица</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Номенклатура" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номенклатура</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:CatalogRef</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="ХарактеристикаНоменклатуры" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Характеристика номенклатуры</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:CatalogRef</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="Описание" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Идентификатор" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>110</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Упаковка" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Упаковка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:CatalogRef</v8:TypeSet>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="НеОткрыватьФормуПриОтсутствииНесопоставленнойНоменклатуры" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Не открывать форму при отсутствии несопоставленной номенклатуры</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Контрагент" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контрагент</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:CatalogRef</v8:TypeSet>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗакрытьНаКлиенте" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть на клиенте</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВладелецЭД" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Владелец ЭД</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:DocumentRef</v8:TypeSet>
+			</Type>
+		</Attribute>
+		<Attribute name="ВидЭД" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид ЭД</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ВидыЭД</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПерезаполнитьПриЗакрытии" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перезаполнить при закрытии</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СпособОбмена" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Способ обмена</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.СпособыОбменаЭД</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЭлектронныйДокументСсылка" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Электронный документ ссылка</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="СпособОбработки" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Способ обработки</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаписатьНоменклатуруКонтрагента" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать и закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать номенклатуру контрагента</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.WriteAndClose</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗаписатьНоменклатуруКонтрагента</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ПрочитатьНоменклатуруКонтрагента" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочитать номенклатуру контрагента</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПрочитатьНоменклатуруКонтрагента</Action>
+		</Command>
+	</Commands>
+</Form>

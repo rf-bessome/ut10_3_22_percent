@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Enum uuid="0f7d5040-8625-433f-bffa-7c72ce85580d">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ПричиныИзмененияСведенийККТ" category="Ref">
+				<xr:TypeId>43c8852a-ed75-407d-999b-63ab95a0fff9</xr:TypeId>
+				<xr:ValueId>585b5e74-4f8f-4838-826c-08f869dbdf80</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ПричиныИзмененияСведенийККТ" category="Manager">
+				<xr:TypeId>dbe54095-c4e2-4f62-aeb1-24b7fa34d787</xr:TypeId>
+				<xr:ValueId>5c6cd8bc-a2c7-44d4-b7bc-1e715e3a0572</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ПричиныИзмененияСведенийККТ" category="List">
+				<xr:TypeId>b3c4c532-34c5-4024-9b83-ddbdb33aaf52</xr:TypeId>
+				<xr:ValueId>e7742ad4-6895-45b3-8f94-3c46e23e72ac</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ПричиныИзмененияСведенийККТ</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Причины изменения сведений о ККТ</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<StandardAttributes>
+				<xr:StandardAttribute name="Order">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="Ref">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+			</StandardAttributes>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="e789cc49-edf7-4f48-8bcf-96d9efc2a536">
+				<Properties>
+					<Name>ЗаменаФН</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Замена фискального накопителя</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Замена фискального накопителя</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="ce78fc2a-71cb-4878-afe5-391f7f1cbc8b">
+				<Properties>
+					<Name>ЗаменаОФД</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Замена оператора фискальных данных</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Замена оператора фискальных данных</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="c0b27fc6-feb9-4c01-a822-df5d71ae038b">
+				<Properties>
+					<Name>ИзменениеНаименованияПользователя</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Изменение наименования пользователя контрольно-кассовой техники</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Изменение наименования пользователя контрольно-кассовой техники</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="7a0c280c-2cc0-4f6f-b485-8357954cd987">
+				<Properties>
+					<Name>ИзменениеАдреса</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Изменение адреса и (или) места установки (применения) контрольно-кассовой техники</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Изменение адреса и (или) места установки (применения) контрольно-кассовой техники</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="df2e6865-b5e2-42a3-b82d-90ad2694a8fe">
+				<Properties>
+					<Name>ПереводВРежимПередачиДанных</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Перевод ККТ из автономного режима в режим передачи данных</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Перевод ККТ из автономного режима в режим передачи данных</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="4f9df1f3-091b-4e3e-b52b-f9d17c562a3e">
+				<Properties>
+					<Name>ПереводВАвтономныйРежим</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Перевод ККТ из режима передачи данных в автономный режим</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Перевод ККТ из режима передачи данных в автономный режим</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="10094db7-bf43-4afb-8d27-6693f64cc7ad">
+				<Properties>
+					<Name>ИзменениеВерсии</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Изменение версии модели ККТ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Изменение версии модели ККТ</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="b49cb7a2-f422-4dec-a1dc-50452a745f88">
+				<Properties>
+					<Name>ИзменениеСистемНалогообложения</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Изменение перечня систем налогообложения, применяемых при осуществлении расчетов</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Изменение перечня систем налогообложения, применяемых при осуществлении расчетов</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="b10fa0a3-7b59-4b6f-8c12-e34a66e49f19">
+				<Properties>
+					<Name>ИзменениеНомераУстройства</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Изменение номера автоматического устройства для расчетов, в составе которого применяется ККТ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Изменение номера автоматического устройства для расчетов, в составе которого применяется ККТ</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="d0216103-69c9-4da7-8df2-6801cb8656cb">
+				<Properties>
+					<Name>ПереводВНеавтоматическийРежим</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Перевод ККТ из автоматического режима в неавтоматический режим (осуществление расчетов кассиром)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Перевод ККТ из автоматического режима в неавтоматический режим (осуществление расчетов кассиром)</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="4018d94e-904c-407d-867f-5aec5d362d55">
+				<Properties>
+					<Name>ПереводВАвтоматическийРежим</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Перевод ККТ из неавтоматического режима (осуществление расчетов кассиром) в автоматический режим</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Перевод ККТ из неавтоматического режима (осуществление расчетов кассиром) в автоматический режим</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="149fbb82-4715-4dc8-b8a1-622e19151214">
+				<Properties>
+					<Name>ВключениеБСО</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Перевод ККТ из режима, не позволяющего формировать БСО, в режим, позволяющий формировать БСО</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Перевод ККТ из режима, не позволяющего формировать БСО, в режим, позволяющий формировать БСО</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="21799759-fe3e-4cbb-9c14-129a92dd052b">
+				<Properties>
+					<Name>ВыключениеБСО</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Перевод ККТ из режима, позволяющего формировать БСО, в режим, не позволяющий формировать БСО</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Перевод ККТ из режима, позволяющего формировать БСО, в режим, не позволяющий формировать БСО</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="0f07c81e-76d6-4a77-b4cd-5860e27b121d">
+				<Properties>
+					<Name>ВключениеРежимаРасчетовВИнтернет</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Перевод ККТ в режим расчетов в сети Интернет</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Перевод ККТ в режим расчетов в сети Интернет</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="fc6f71c5-e40c-4884-b17a-c7fcc56aade7">
+				<Properties>
+					<Name>ВыключениеРежимаРасчетовВИнтернет</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Перевод ККТ из режима расчетов в сети Интернет</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Перевод ККТ из режима расчетов в сети Интернет</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="b967361b-335b-4949-9894-de0bf9a47471">
+				<Properties>
+					<Name>ВключениеРежимаАгента</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Перевод ККТ в режим, позволяющий оказывать услуги платежного или банковского агента</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Перевод ККТ из режима, не позволяющего оказывать услуги платежного агента (субагента) или банковского платежного агента в режим, позволяющий оказывать услуги платежного агента (субагента) или банковского платежного агента</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="a394d957-f167-4642-9a50-5556318e952d">
+				<Properties>
+					<Name>ВыключениеРежимаАгента</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Перевод ККТ в режим не позволяющий оказывать услуги платежного или банковского агента</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Перевод ККТ из режима, позволяющего оказывать услуги платежного агента (субагента) или банковского платежного агента, в режим, не позволяющий оказывать услуги платежного агента (субагента) или банковского платежного агента</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="bed8f756-f1d8-4cf5-aa42-1d077b4d5acf">
+				<Properties>
+					<Name>ВключениеРежимаАзартныхИгр</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Перевод ККТ в режим, позволяющий применять ККТ при приеме ставок</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Перевод ККТ из режима, не позволяющего применять ККТ при приеме ставок и выплате денежных средств в виде выигрыша при осуществлении деятельности по организации и проведению азартных игр, в режим, позволяющий применять ККТ при приеме ставок и выплате денеж</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="b4815472-484a-4c9e-b021-cc825ea9c439">
+				<Properties>
+					<Name>ВыключениеРежимаАзартныхИгр</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Перевод ККТ в режим, не позволяющий применять ККТ при приеме ставок</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Перевод ККТ из режима, позволяющего применять ККТ при приеме ставок и выплате денежных средств в виде выигрыша при осуществлении деятельности по организации и проведению азартных игр, в режим, не позволяющий применять ККТ при приеме ставок и выплате денеж</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="bc47daac-cf0e-4119-a304-b83da086caf3">
+				<Properties>
+					<Name>ВключениеРежимаЛотереи</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Перевод ККТ в режим, позволяющий применять ККТ при реализации лотерейных билетов</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Перевод ККТ из режима, не позволяющего применять ККТ при приеме денежных средств при реализации лотерейных билетов, электронных лотерейных билетов, приеме лотерейных ставок и выплате денежных средств в виде выигрыша при осуществлении деятельности по орган</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="caa78b3b-1aa4-4f88-be5a-10110b81dcde">
+				<Properties>
+					<Name>ВыключениеРежимаЛотереи</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Перевод ККТ в режим, не позволяющий применять ККТ при реализации лотерейных билетов</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Перевод ККТ из режима, позволяющего применять ККТ при приеме денежных средств при реализации лотерейных билетов, электронных лотерейных билетов, приеме лотерейных ставок и выплате денежных средств в виде выигрыша при осуществлении деятельности по организа</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="ba42a761-2d30-4a4e-93ab-3799e44b3396">
+				<Properties>
+					<Name>ИзменениеВерсииФФД</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Изменение версии ФФД</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Изменение версии ФФД</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="6c08105a-dff2-4328-b7f5-9f003f5618b5">
+				<Properties>
+					<Name>Иное</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Иные причины</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Иные причины</Comment>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

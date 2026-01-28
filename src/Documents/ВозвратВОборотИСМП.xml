@@ -509,6 +509,7 @@
 			<Form>ФормаДокумента</Form>
 			<Form>ФормаСписка</Form>
 			<Form>ФормаСпискаДокументов</Form>
+			<Form>ЗаполнениеПервичногоДокумента</Form>
 			<TabularSection uuid="1019d3d3-16ef-4973-bfdb-38c34ec6ab41">
 				<InternalInfo>
 					<xr:GeneratedType name="DocumentTabularSection.ВозвратВОборотИСМП.Товары" category="TabularSection">

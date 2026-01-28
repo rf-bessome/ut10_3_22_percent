@@ -2716,6 +2716,7 @@
 			<Constant>ШаблоныТелефонныхНомеров</Constant>
 			<Constant>ЭтоАвтономноеРабочееМесто</Constant>
 			<Constant>ЮрФизЛицо</Constant>
+			<Constant>СтавкаНДСДляККМПоУСН</Constant>
 			<CommonForm>АварийныйРежимИСМП</CommonForm>
 			<CommonForm>АвторизацияНаСайтеПоддержкиПользователей</CommonForm>
 			<CommonForm>АдресРеестраМЧД</CommonForm>
